@@ -1,0 +1,1581 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f2f2f7">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Catmin">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20x%3D%2210%22%20y%3D%222%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%235A2E12%22/%3E%3Crect%20x%3D%2215%22%20y%3D%222%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%235A2E12%22/%3E%3Crect%20x%3D%2210%22%20y%3D%223%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%235A2E12%22/%3E%3Crect%20x%3D%2211%22%20y%3D%223%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%23F29CA3%22/%3E%3Crect%20x%3D%2214%22%20y%3D%223%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%23F29CA3%22/%3E%3Crect%20x%3D%2215%22%20y%3D%223%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%235A2E12%22/%3E%3Crect%20x%3D%2210%22%20y%3D%224%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%235A2E12%22/%3E%3Crect%20x%3D%2211%22%20y%3D%224%22%20width%3D%224%22%20height%3D%221%22%20fill%3D%22%23E8893A%22/%3E%3Crect%20x%3D%2215%22%20y%3D%224%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%235A2E12%22/%3E%3Crect%20x%3D%2210%22%20y%3D%225%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%235A2E12%22/%3E%3Crect%20x%3D%2211%22%20y%3D%225%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%23E8893A%22/%3E%3Crect%20x%3D%2212%22%20y%3D%225%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%231C1C1E%22/%3E%3Crect%20x%3D%2213%22%20y%3D%225%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%23E8893A%22/%3E%3Crect%20x%3D%2214%22%20y%3D%225%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%231C1C1E%22/%3E%3Crect%20x%3D%2215%22%20y%3D%225%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%23E8893A%22/%3E%3Crect%20x%3D%2210%22%20y%3D%226%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%235A2E12%22/%3E%3Crect%20x%3D%2211%22%20y%3D%226%22%20width%3D%223%22%20height%3D%221%22%20fill%3D%22%23E8893A%22/%3E%3Crect%20x%3D%2214%22%20y%3D%226%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%23F29CA3%22/%3E%3Crect%20x%3D%2215%22%20y%3D%226%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%23E8893A%22/%3E%3Crect%20x%3D%229%22%20y%3D%227%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%235A2E12%22/%3E%3Crect%20x%3D%2210%22%20y%3D%227%22%20width%3D%225%22%20height%3D%221%22%20fill%3D%22%23E8893A%22/%3E%3Crect%20x%3D%226%22%20y%3D%228%22%20width%3D%222%22%20height%3D%221%22%20fill%3D%22%235A2E12%22/%3E%3Crect%20x%3D%228%22%20y%3D%228%22%20width%3D%225%22%20height%3D%221%22%20fill%3D%22%23E8893A%22/%3E%3Crect%20x%3D%2213%22%20y%3D%228%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%235A2E12%22/%3E%3Crect%20x%3D%225%22%20y%3D%229%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%235A2E12%22/%3E%3Crect%20x%3D%226%22%20y%3D%229%22%20width%3D%222%22%20height%3D%221%22%20fill%3D%22%23E8893A%22/%3E%3Crect%20x%3D%228%22%20y%3D%229%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%23C9662A%22/%3E%3Crect%20x%3D%229%22%20y%3D%229%22%20width%3D%222%22%20height%3D%221%22%20fill%3D%22%23E8893A%22/%3E%3Crect%20x%3D%2211%22%20y%3D%229%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%23C9662A%22/%3E%3Crect%20x%3D%2212%22%20y%3D%229%22%20width%3D%222%22%20height%3D%221%22%20fill%3D%22%23E8893A%22/%3E%3Crect%20x%3D%2214%22%20y%3D%229%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%235A2E12%22/%3E%3Crect%20x%3D%224%22%20y%3D%2210%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%235A2E12%22/%3E%3Crect%20x%3D%225%22%20y%3D%2210%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%23C9662A%22/%3E%3Crect%20x%3D%226%22%20y%3D%2210%22%20width%3D%228%22%20height%3D%221%22%20fill%3D%22%23E8893A%22/%3E%3Crect%20x%3D%2214%22%20y%3D%2210%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%235A2E12%22/%3E%3Crect%20x%3D%220%22%20y%3D%2211%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%23E8893A%22/%3E%3Crect%20x%3D%224%22%20y%3D%2211%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%235A2E12%22/%3E%3Crect%20x%3D%225%22%20y%3D%2211%22%20width%3D%226%22%20height%3D%221%22%20fill%3D%22%23F7C99A%22/%3E%3Crect%20x%3D%2211%22%20y%3D%2211%22%20width%3D%223%22%20height%3D%221%22%20fill%3D%22%23E8893A%22/%3E%3Crect%20x%3D%2214%22%20y%3D%2211%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%235A2E12%22/%3E%3Crect%20x%3D%220%22%20y%3D%2212%22%20width%3D%222%22%20height%3D%221%22%20fill%3D%22%23E8893A%22/%3E%3Crect%20x%3D%224%22%20y%3D%2212%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%235A2E12%22/%3E%3Crect%20x%3D%225%22%20y%3D%2212%22%20width%3D%225%22%20height%3D%221%22%20fill%3D%22%23F7C99A%22/%3E%3Crect%20x%3D%2210%22%20y%3D%2212%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%23E8893A%22/%3E%3Crect%20x%3D%2211%22%20y%3D%2212%22%20width%3D%222%22%20height%3D%221%22%20fill%3D%22%23E8893A%22/%3E%3Crect%20x%3D%2213%22%20y%3D%2212%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%23E8893A%22/%3E%3Crect%20x%3D%2214%22%20y%3D%2212%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%235A2E12%22/%3E%3Crect%20x%3D%221%22%20y%3D%2213%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22%23E8893A%22/%3E%3Crect%20x%3D%222%22%20y%3D%2213%22%20width%3D%2213%22%20height%3D%221%22%20fill%3D%22%235A2E12%22/%3E%3C/svg%3E">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<title>Prototipo Catmin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+/* Paleta azul de Marco con estilo iOS + Airbnb: superficies claras, barras translúcidas, listas agrupadas, selección azul. Solo tema claro. */
+:root{
+  --bg:#f2f2f7; --surface:#ffffff; --surface-2:#eef1f7; --fill:#e6e8f0; --hairline:#e6e8f0; --border-strong:#cfd4e0;
+  --text:#003c70; --text-2:#626a80; --text-3:#aab0c0;
+  --accent:#0d76ff; --accent-strong:#0a6cf0; --accent-text:#0a5fd1; --accent-soft:#e7effb;
+  --primary:var(--accent-strong); --on-primary:#ffffff;
+  --success:#2fb47c; --success-bg:#eafaf3; --amber:#f5a623; --amber-soft:#fff8ee; --orange:#ff6600; --orange-soft:#fff2ea;
+  --danger:#e5484d; --danger-text:#c93b40; --danger-bg:#fdf1ef; --info:var(--accent); --warning:var(--orange);
+  --chip:#f2f1f7; --disabled:#cccccc;
+  --stage:#e3e7ef; --overlay:#00000026; --glass:rgba(255,255,255,.76);
+  --r-md:16px; --r-lg:24px; --r-btn:14px; --pill:999px;
+  --font:-apple-system,BlinkMacSystemFont,'Inter','Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+  --shadow:0 1px 2px rgba(0,60,112,.04),0 4px 14px rgba(0,60,112,.06);
+  --shadow-float:0 10px 28px #0d76ff20;
+  --nav-h:64px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{height:100%}
+body{margin:0;background:var(--stage);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.4;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+input,textarea{font:inherit;color:var(--text)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:10px}
+.tnum{font-variant-numeric:tabular-nums}
+
+/* Escenario */
+.stage{min-height:100%;display:grid;grid-template-columns:340px auto;gap:40px;justify-content:center;align-items:center;padding-block:24px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.device{position:relative;width:390px;height:min(844px,calc(100vh - 48px));min-height:640px;border:10px solid #10151f;border-radius:54px;overflow:hidden;background:var(--bg);box-shadow:0 30px 60px rgba(0,60,112,.18)}
+.app{position:absolute;inset:0;display:flex;flex-direction:column;background:var(--bg);overflow:hidden}
+@media (max-width:999px){
+  body{background:var(--bg)}
+  .stage{display:block;padding:0;height:100%;min-height:0}
+  .panel{display:none!important}
+  .device{width:100%;height:100%;min-height:0;border:0;border-radius:0;box-shadow:none}
+}
+
+/* Panel de pruebas */
+.panel{background:var(--surface);border-radius:var(--r-lg);padding:24px;display:flex;flex-direction:column;gap:20px;max-height:calc(100vh - 48px);overflow:auto;box-shadow:var(--shadow)}
+.panel h2{margin:0;font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--text-2);font-weight:700}
+.brand{display:flex;align-items:center;gap:10px}
+.brand svg{width:40px;height:auto;flex:none}
+.brand b{font-size:22px;font-weight:800;letter-spacing:-.02em}
+.tag{font-size:12px;font-weight:600;padding:4px 10px;border-radius:var(--pill);background:var(--surface-2);color:var(--text-2)}
+.panel p{margin:0;color:var(--text-2);font-size:14px}
+.pgroup{display:flex;flex-direction:column;gap:10px}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg button{min-height:38px;padding:0 14px;border-radius:var(--pill);background:var(--surface);box-shadow:inset 0 0 0 1px var(--border-strong);font-size:14px;font-weight:600}
+.seg button[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent-text);box-shadow:inset 0 0 0 2px var(--accent)}
+.swatches{display:flex;gap:8px;flex-wrap:wrap}
+.swatch{width:46px;height:46px;border-radius:14px;background:var(--surface-2);display:grid;place-items:center}
+.swatch[aria-pressed="true"]{background:var(--accent-soft);box-shadow:inset 0 0 0 2px var(--accent)}
+.swatch svg{width:30px;height:auto}
+.switch-row{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:15px;font-weight:600}
+.switch{width:51px;height:31px;border-radius:var(--pill);background:var(--fill);position:relative;flex:none;transition:background .2s}
+.switch::after{content:"";position:absolute;top:2px;left:2px;width:27px;height:27px;border-radius:50%;background:#fff;box-shadow:0 3px 8px rgba(0,0,0,.15),0 1px 1px rgba(0,0,0,.06);transition:transform .2s}
+.switch[aria-checked="true"]{background:var(--success)}
+.switch[aria-checked="true"]::after{transform:translateX(20px)}
+.task{border:1px solid var(--hairline);border-radius:16px;padding:12px 14px;display:flex;flex-direction:column;gap:8px}
+.task-top{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700}
+.task-n{width:24px;height:24px;border-radius:50%;background:var(--surface-2);display:grid;place-items:center;font-size:12px}
+.task.done .task-n{background:var(--success);color:#fff}
+.task.running{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.task p{color:var(--text);font-size:14px}
+.task-meta{display:flex;align-items:center;justify-content:space-between;font-size:13px;color:var(--text-2)}
+.linkbtn{font-weight:600;font-size:14px;color:var(--accent-text)}
+
+/* Pantalla */
+.screen{flex:1;overflow-y:auto;overflow-x:hidden;padding-top:14px;padding-bottom:calc(var(--nav-h) + 76px);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:22px}
+.screen > *{flex-shrink:0}
+.screen.public{padding:0 0 110px;gap:0;background:var(--surface)}
+.screen.public.done{background:var(--bg)}
+.screen.public.chatmode{padding-bottom:0}
+.top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.top .lt{min-width:0}
+.eyebrow{margin:0;font-size:13px;font-weight:600;color:var(--text-2);text-transform:uppercase;letter-spacing:.03em}
+h1.title{margin:2px 0 0;font-size:30px;line-height:1.12;font-weight:800;letter-spacing:-.025em;text-wrap:balance}
+.sub{color:var(--text-2);font-size:14px;margin:4px 0 0}
+.sync{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:600;color:var(--text-2);white-space:nowrap}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--success)}
+.dot.off{background:var(--accent)}
+.offline-bar{display:flex;gap:10px;align-items:flex-start;background:var(--accent-soft);color:var(--accent-text);border-radius:14px;padding:12px 14px;font-size:14px;font-weight:600}
+.offline-bar svg{flex:none;margin-top:1px}
+.avatar{width:44px;height:44px;border-radius:50%;background:var(--accent-strong);color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px;flex:none}
+.avatar.lg{width:72px;height:72px;font-size:24px}
+.avatar.soft{background:var(--surface-2);color:var(--text)}
+.iconbtn{width:44px;height:44px;border-radius:50%;background:var(--glass);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);display:grid;place-items:center;box-shadow:var(--shadow);flex:none;color:var(--accent-text)}
+
+/* Botones */
+.btn{min-height:50px;padding:0 18px;border-radius:var(--r-btn);display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:16px;white-space:nowrap;transition:transform .1s}
+.btn:active{transform:scale(.98)}
+.btn-primary,.btn-accent{background:var(--primary);color:var(--on-primary);box-shadow:0 6px 16px #0d76ff30}
+.btn-light,.btn-ghost{background:var(--accent-soft);color:var(--accent-text)}
+.btn-line{background:var(--surface);color:var(--text);box-shadow:inset 0 0 0 1px var(--border-strong)}
+.btn-block{width:100%}
+.btn[disabled]{background:var(--disabled);color:#fff;box-shadow:none;cursor:not-allowed}
+.btn-sm{min-height:36px;padding:0 14px;font-size:14px;border-radius:10px}
+
+/* Resumen de hoy */
+.summary-card{background:var(--surface);border-radius:var(--r-lg);padding:20px;display:flex;flex-direction:column;gap:16px;box-shadow:var(--shadow)}
+.summary-card .k{font-size:15px;font-weight:600;color:var(--text-2)}
+.summary-card .big{font-size:42px;font-weight:800;letter-spacing:-.035em;line-height:1.05;margin-top:2px}
+.progress{display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--text-2)}
+.actions2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+
+/* Listas agrupadas */
+.section{display:flex;flex-direction:column;gap:8px}
+.section-h{display:flex;align-items:baseline;justify-content:space-between;gap:8px;padding:0 2px}
+.section-h h2{margin:0;font-size:20px;font-weight:700;letter-spacing:-.015em}
+.section-h button{font-size:15px;font-weight:600;color:var(--accent-text)}
+.card{background:var(--surface);border-radius:var(--r-md);box-shadow:var(--shadow)}
+.list{background:var(--surface);border-radius:var(--r-md);box-shadow:var(--shadow);overflow:hidden}
+.row{position:relative;display:flex;align-items:center;gap:12px;padding:12px 16px;width:100%;text-align:left;min-height:60px}
+.row + .row::before{content:"";position:absolute;top:0;right:0;left:16px;height:1px;background:var(--hairline)}
+.inset-ico .row + .row::before{left:60px}
+.inset-avatar .row + .row::before{left:72px}
+.inset-time .row + .row::before{left:84px}
+button.row:active{background:var(--surface-2)}
+.row .grow{flex:1;min-width:0}
+.row .t1{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .t2{display:block;font-size:13px;color:var(--text-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chev{color:var(--text-3);display:grid;flex:none}
+.ico{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;color:#fff;background:var(--c,var(--accent));flex:none}
+.time{width:56px;flex:none;font-weight:700;font-size:15px;line-height:1.15}
+.time small{display:block;font-weight:500;color:var(--text-2);font-size:12px}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:var(--pill);font-size:12px;font-weight:600;white-space:nowrap;flex:none;color:var(--text);background:var(--chip)}
+.chip::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--dot,var(--text-3));flex:none}
+.chip:has(svg)::before{display:none}
+.chip.ok{background:var(--success-bg);--dot:var(--success)}
+.chip.warn{background:var(--amber-soft);--dot:var(--amber)}
+.chip.due{background:var(--orange-soft);--dot:var(--orange)}
+.chip.bad{background:var(--danger-bg);--dot:var(--danger)}
+.chip.info{background:var(--accent-soft);--dot:var(--accent)}
+.chip.neutral{background:var(--chip);color:var(--text-2)}
+.chip.recent{background:var(--accent-soft);color:var(--accent-text);--dot:var(--accent)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.empty{padding:28px 16px;text-align:center;color:var(--text-2);font-size:14px;display:flex;flex-direction:column;align-items:center;gap:12px}
+
+/* Barra de navegación flotante y translúcida */
+.nav{position:absolute;left:max(12px,env(safe-area-inset-left,0px));right:max(12px,env(safe-area-inset-right,0px));bottom:calc(12px + env(safe-area-inset-bottom,0px));height:var(--nav-h);background:var(--glass);-webkit-backdrop-filter:saturate(180%) blur(24px);backdrop-filter:saturate(180%) blur(24px);border-radius:var(--pill);display:grid;grid-template-columns:1fr 1fr 60px 1fr 1fr;align-items:center;padding:6px;gap:2px;z-index:10;box-shadow:0 10px 30px rgba(0,60,112,.10),inset 0 0 0 1px rgba(0,60,112,.06)}
+.nav .tab{height:52px;min-width:0;border-radius:var(--pill);color:var(--text-2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-size:10.5px;font-weight:600}
+.nav .tab span{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nav .tab[aria-current="page"]{color:var(--accent-text);background:var(--accent-soft)}
+.nav .tab[aria-current="page"] svg{color:var(--accent)}
+.nav .plus{width:52px;height:52px;border-radius:50%;background:var(--primary);color:#fff;display:grid;place-items:center;justify-self:center;box-shadow:0 6px 16px #0d76ff40}
+
+/* Agenda */
+.week-card{background:var(--surface);border-radius:var(--r-md);box-shadow:var(--shadow);padding:8px 6px}
+.week{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.week::-webkit-scrollbar{display:none}
+.day{flex:none;width:48px;padding:6px 0 4px;border-radius:14px;display:flex;flex-direction:column;align-items:center;gap:4px}
+.day small{font-size:11px;color:var(--text-2);font-weight:600;text-transform:uppercase;letter-spacing:.02em}
+.day b{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-size:17px;font-weight:600}
+.day.today b{color:var(--accent-text)}
+.day[aria-pressed="true"] b{background:var(--accent-strong);color:#fff}
+.day i{width:5px;height:5px;border-radius:50%;background:var(--text-3);display:block}
+.slots{display:flex;flex-direction:column}
+.hour{display:grid;grid-template-columns:54px 1fr;gap:10px;min-height:56px;padding-block:4px}
+.hour > span{font-size:12px;color:var(--text-2);font-weight:600;padding-top:6px}
+.hour .cell{display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--hairline);padding-top:6px}
+.free{min-height:40px;border-radius:12px;color:var(--text-2);font-size:14px;font-weight:500;display:flex;align-items:center;gap:6px;padding:0 12px;text-align:left}
+.free:hover{background:var(--surface)}
+.appt{position:relative;overflow:hidden;background:var(--accent-soft);border-radius:12px;padding:10px 12px 10px 16px;display:flex;flex-direction:column;gap:2px;text-align:left;width:100%}
+.appt::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent)}
+.appt .r{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.appt b{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.appt span{font-size:13px;color:var(--text-2)}
+.appt .chip{background:var(--surface)}
+.appt.done{background:var(--surface-2)}
+.appt.done::before{background:var(--text-3)}
+
+/* Pacientes y clientes */
+.search{display:flex;align-items:center;gap:8px;background:var(--surface);box-shadow:inset 0 0 0 1px var(--hairline);border-radius:12px;padding:0 12px;height:44px;color:var(--text-2)}
+.search input{flex:1;border:0;outline:0;background:transparent;font-size:17px;min-width:0;color:var(--text)}
+.search input::placeholder{color:var(--text-2)}
+.search:focus-within{box-shadow:inset 0 0 0 1.5px var(--accent),0 0 0 3px var(--accent-soft)}
+.client-head{background:var(--surface);border-radius:var(--r-lg);padding:20px 16px 16px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;box-shadow:var(--shadow)}
+.client-head h1{margin:0;font-size:24px;font-weight:800;letter-spacing:-.02em}
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;width:100%}
+.quick button{background:var(--surface-2);border-radius:14px;padding:10px 4px 8px;display:flex;flex-direction:column;align-items:center;gap:4px;font-size:12px;font-weight:600;line-height:1.15;color:var(--accent-text);min-width:0}
+.tabs{display:flex;background:var(--fill);border-radius:12px;padding:3px;gap:2px}
+.tabs button{flex:1;min-height:34px;border-radius:9px;font-weight:600;font-size:14px;color:var(--text)}
+.tabs button[aria-selected="true"]{background:var(--surface);box-shadow:0 1px 3px rgba(0,60,112,.14),0 0 0 .5px rgba(0,60,112,.05)}
+.entry{background:var(--surface);border-radius:var(--r-md);padding:16px;display:flex;flex-direction:column;gap:10px;box-shadow:var(--shadow);text-align:left;width:100%}
+.entry-h{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.entry-h b{font-size:16px}
+.entry-h small{color:var(--text-2);font-size:13px}
+.entry dl{margin:0;display:flex;flex-direction:column;gap:10px}
+.entry dt{font-size:12px;font-weight:600;color:var(--text-2);text-transform:uppercase;letter-spacing:.03em}
+.entry dd{margin:2px 0 0;font-size:15px}
+.entry .preview{color:var(--text-2);font-size:14px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.entry.latest{box-shadow:var(--shadow),inset 0 0 0 2px var(--accent)}
+.plan{padding:16px;display:flex;flex-direction:column;gap:10px}
+.bar{height:8px;border-radius:var(--pill);background:var(--fill);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:inherit}
+.kv{display:flex;justify-content:space-between;gap:12px;font-size:14px;color:var(--text-2)}
+.kv b{color:var(--text)}
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.photo{aspect-ratio:1;border-radius:14px;background:repeating-linear-gradient(135deg,var(--surface-2) 0 10px,var(--fill) 10px 20px);display:flex;align-items:flex-end;padding:8px;font-size:12px;font-weight:600;color:var(--text-2);max-width:100%}
+
+/* Cobrar */
+.client-chip{display:flex;align-items:center;gap:10px;background:var(--surface);border-radius:14px;padding:6px 6px 6px 14px;box-shadow:var(--shadow);font-size:15px;font-weight:600;width:100%;text-align:left;min-height:50px}
+.client-chip .grow{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.client-chip .x{width:36px;height:36px;border-radius:50%;background:var(--surface-2);display:grid;place-items:center}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.item{background:var(--surface);border-radius:var(--r-md);padding:14px;min-height:96px;display:flex;flex-direction:column;justify-content:space-between;gap:8px;text-align:left;box-shadow:var(--shadow);position:relative}
+.item b{font-size:15px;font-weight:600;line-height:1.25}
+.item span{font-size:17px;font-weight:700}
+.item small{font-size:12px;color:var(--text-2);font-weight:500}
+.item .q{position:absolute;top:10px;right:10px;min-width:24px;height:24px;border-radius:var(--pill);background:var(--accent-strong);color:#fff;font-size:13px;font-weight:700;display:grid;place-items:center;padding:0 6px}
+.item.in{background:var(--accent-soft);box-shadow:inset 0 0 0 2px var(--accent)}
+.item.free-item{background:transparent;box-shadow:none;border:1.5px dashed var(--text-3);color:var(--text-2)}
+.cartbar{position:absolute;left:max(12px,env(safe-area-inset-left,0px));right:max(12px,env(safe-area-inset-right,0px));bottom:calc(12px + var(--nav-h) + 52px + env(safe-area-inset-bottom,0px));background:var(--glass);-webkit-backdrop-filter:saturate(180%) blur(24px);backdrop-filter:saturate(180%) blur(24px);border-radius:22px;padding:10px 10px 10px 18px;display:flex;align-items:center;gap:12px;box-shadow:var(--shadow-float),inset 0 0 0 1px rgba(0,60,112,.06);z-index:9}
+.cartbar .grow{flex:1;min-width:0}
+.cartbar small{display:block;color:var(--text-2);font-size:13px}
+.cartbar b{font-size:20px;font-weight:800}
+
+/* Hojas */
+.overlay{position:absolute;inset:0;background:var(--overlay);z-index:30;animation:fade .2s ease}
+.sheet{position:absolute;left:0;right:0;bottom:0;max-height:92%;background:var(--surface);border-radius:28px 28px 0 0;z-index:31;display:flex;flex-direction:column;box-shadow:0 -10px 30px rgba(0,60,112,.10)}
+.sheet.in{animation:up .26s cubic-bezier(.2,.8,.2,1)}
+.grab{width:36px;height:5px;border-radius:var(--pill);background:var(--border-strong);margin:8px auto 0;flex:none}
+.sheet-h{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px max(20px,env(safe-area-inset-right,0px)) 8px max(20px,env(safe-area-inset-left,0px));flex:none}
+.sheet-h h2{margin:0;font-size:20px;font-weight:700;letter-spacing:-.015em}
+.sheet-h .iconbtn{background:var(--surface-2);box-shadow:none;width:34px;height:34px;color:var(--text-2);-webkit-backdrop-filter:none;backdrop-filter:none}
+.sheet-body{overflow-y:auto;padding:8px max(20px,env(safe-area-inset-right,0px)) 16px max(20px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:20px}
+.sheet-f{flex:none;padding:12px max(20px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px));border-top:1px solid var(--hairline);display:flex;flex-direction:column;gap:8px}
+.sheet-f .hint{font-size:13px;color:var(--text-2);text-align:center}
+.field{display:flex;flex-direction:column;gap:8px}
+.field > label,.label{font-size:13px;font-weight:600;color:var(--text-2);text-transform:uppercase;letter-spacing:.03em}
+.input{height:52px;border-radius:12px;border:1px solid var(--border-strong);padding:0 14px;font-size:17px;background:var(--surface);width:100%}
+textarea.input{height:auto;min-height:88px;padding:12px 14px;resize:vertical;line-height:1.4}
+.input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.input.err{border-color:var(--danger);box-shadow:0 0 0 3px var(--danger-bg)}
+.err-msg{font-size:13px;color:var(--danger-text);font-weight:600}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{min-height:44px;padding:8px 14px;border-radius:12px;box-shadow:inset 0 0 0 1px var(--border-strong);background:var(--surface);font-size:15px;font-weight:600;text-align:left;display:flex;flex-direction:column;justify-content:center}
+.opt small{font-weight:500;color:var(--text-2);font-size:12px}
+.opt[aria-pressed="true"]{background:var(--accent-soft);box-shadow:inset 0 0 0 2px var(--accent)}
+.opt[disabled]{opacity:.4;text-decoration:line-through;cursor:not-allowed}
+.times{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.times .opt{align-items:center;padding:8px 4px;font-size:14px}
+.picked{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:14px;background:var(--surface-2)}
+.picked .grow{flex:1;min-width:0}
+.picked button{font-size:15px;font-weight:600;color:var(--accent-text)}
+.results{display:flex;flex-direction:column;border:1px solid var(--hairline);border-radius:14px;overflow:hidden}
+.results button{display:flex;align-items:center;gap:10px;padding:10px 12px;text-align:left;min-height:52px}
+.results button + button{border-top:1px solid var(--hairline)}
+.summary{background:var(--surface-2);border-radius:14px;padding:14px 16px;font-size:14px;display:flex;flex-direction:column;gap:4px}
+.summary b{font-size:16px}
+.done-box{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;padding:12px 0 4px}
+.done-box .badge{width:76px;height:76px;border-radius:50%;background:var(--success);color:#fff;display:grid;place-items:center;box-shadow:0 8px 20px rgba(47,180,124,.3)}
+.done-box h3{margin:0;font-size:22px;font-weight:800;letter-spacing:-.02em}
+.done-box p{margin:0;color:var(--text-2);font-size:15px;max-width:30ch}
+.spinner{width:56px;height:56px;border-radius:50%;border:5px solid var(--accent-soft);border-top-color:var(--accent);animation:spin .8s linear infinite}
+.paytotal{text-align:center;display:flex;flex-direction:column;gap:2px}
+.paytotal small{color:var(--text-2);font-weight:600}
+.paytotal b{font-size:40px;font-weight:800;letter-spacing:-.03em}
+.paylines{display:flex;flex-direction:column;gap:10px}
+.payline{border:1px solid var(--hairline);border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:10px}
+.payline .r{display:flex;align-items:center;gap:10px}
+.payline .r b{flex:1}
+.money{display:flex;align-items:center;border:1px solid var(--border-strong);border-radius:12px;height:46px;padding:0 12px;gap:4px;background:var(--surface);width:130px}
+.money span{color:var(--text-2);font-weight:600}
+.money input{border:0;outline:0;width:100%;font-size:17px;font-weight:700;text-align:right;background:transparent}
+.money:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.methods{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.method{min-height:56px;border-radius:14px;background:var(--surface-2);display:flex;align-items:center;gap:10px;padding:0 14px;font-weight:600;font-size:15px}
+.method svg{color:var(--accent)}
+.paystate{display:flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:10px;border-radius:12px;color:var(--text)}
+.paystate::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--dot);flex:none}
+.paystate:has(svg)::before{display:none}
+.paystate svg{color:var(--success)}
+.paystate.ok{background:var(--success-bg)}
+.paystate.warn{background:var(--amber-soft);--dot:var(--amber)}
+.paystate.bad{background:var(--danger-bg);--dot:var(--danger)}
+.lines .row{min-height:52px;padding:10px 0}
+.lines .row + .row::before{left:0}
+.qty{display:flex;align-items:center;gap:8px}
+.qty button{width:32px;height:32px;border-radius:50%;background:var(--accent-soft);color:var(--accent-text);display:grid;place-items:center}
+.ticket{background:#fff;margin:0 auto;width:250px;max-width:100%;padding:18px 16px;font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-size:12px;line-height:1.5;color:#111;border:1px solid var(--hairline);box-shadow:var(--shadow);border-radius:4px}
+.ticket .c{text-align:center}
+.ticket hr{border:0;border-top:1px dashed #999;margin:8px 0}
+.ticket .l{display:flex;justify-content:space-between;gap:8px}
+.page{background:#fff;border:1px solid var(--hairline);box-shadow:var(--shadow);border-radius:6px;padding:22px 20px;font-size:13px;display:flex;flex-direction:column;gap:12px;aspect-ratio:8.5/11;max-width:100%;overflow:hidden}
+.page header{display:flex;justify-content:space-between;gap:12px;border-bottom:2px solid var(--text);padding-bottom:10px}
+.page header b{font-size:16px;display:block}
+.page header small{color:var(--text-2);display:block;font-size:11px}
+.page .rx{flex:1;display:flex;flex-direction:column;gap:6px}
+.page .sign{margin-top:auto;align-self:center;border-top:1px solid var(--text);padding-top:4px;width:60%;text-align:center;font-size:11px;color:var(--text-2)}
+.menu-list{display:flex;flex-direction:column}
+.menu-list button{display:flex;align-items:center;gap:12px;min-height:52px;text-align:left;font-weight:600}
+.menu-list button > svg{color:var(--accent)}
+.menu-list button + button{border-top:1px solid var(--hairline)}
+.menu-list button .grow{flex:1}
+.proto{background:var(--surface-2);border-radius:var(--r-md);padding:16px;display:flex;flex-direction:column;gap:14px}
+.proto h3{margin:0;font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--text-2)}
+
+/* Perfil público (ficha estilo Airbnb) */
+.urlbar{display:flex;align-items:center;gap:8px;justify-content:flex-start;font-size:13px;color:var(--text-2);background:rgba(255,255,255,.86);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);padding:10px 16px;border-bottom:1px solid var(--hairline);position:sticky;top:0;z-index:5}
+.cover,.confirm-photo{background:radial-gradient(circle at 20% 30%,rgba(255,255,255,.3) 0 2px,transparent 3px) 0 0/18px 18px,linear-gradient(160deg,#e7effb 0%,#0d76ff 120%)}
+.cover{height:230px;display:flex;align-items:flex-end;padding:16px 16px 40px}
+.cover-hint{background:rgba(255,255,255,.9);border-radius:var(--pill);padding:6px 12px;font-size:12px;font-weight:600;color:var(--text)}
+.pub-sheet{background:var(--surface);border-radius:24px 24px 0 0;margin-top:-24px;position:relative;padding:24px max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:20px}
+.pub-title{text-align:center;display:flex;flex-direction:column;gap:4px;align-items:center}
+.pub-title h1{margin:0;font-size:26px;line-height:1.15;font-weight:800;letter-spacing:-.02em;text-wrap:balance}
+.pub-title p{margin:0;color:var(--text-2);font-size:15px}
+.highlights{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--hairline);border-radius:16px;padding:14px 0}
+.highlights div{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;font-size:12px;font-weight:600;line-height:1.25;padding:0 8px}
+.highlights svg{color:var(--accent)}
+.highlights div + div{border-left:1px solid var(--hairline)}
+.host{display:flex;align-items:center;gap:12px;padding:16px 0;border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline)}
+.bio{margin:0;font-size:16px;line-height:1.5}
+.pub-sec{display:flex;flex-direction:column;gap:4px}
+.pub-sec h2{margin:0 0 4px;font-size:20px;font-weight:700;letter-spacing:-.015em}
+.svc-row{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--hairline);text-align:left;width:100%}
+.svc-row .grow{flex:1;min-width:0}
+.info-row{display:flex;gap:12px;align-items:flex-start;font-size:15px;padding:4px 0}
+.info-row svg{color:var(--text-2);flex:none}
+.powered{text-align:center;color:var(--text-2);font-size:13px;margin:8px 0 0}
+.pub-sticky{position:absolute;left:0;right:0;bottom:0;padding:12px max(16px,env(safe-area-inset-right,0px)) calc(14px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:var(--surface);border-top:1px solid var(--hairline);z-index:6}
+.pub-sticky.booking{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.pub-sticky.clear{background:var(--bg);border-top:0}
+.price b{display:block;font-size:17px;font-weight:700}
+.price span{font-size:13px;color:var(--text-2);text-decoration:underline;text-underline-offset:2px}
+.pub-body{padding:12px max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:20px}
+.step-h{display:flex;align-items:center;gap:12px;padding:12px max(16px,env(safe-area-inset-right,0px)) 4px max(16px,env(safe-area-inset-left,0px))}
+.step-h h1{margin:0;font-size:22px;font-weight:800;letter-spacing:-.02em}
+.step-h small{color:var(--text-2);font-size:13px;font-weight:600;display:block}
+.step-h .iconbtn{background:var(--surface-2);box-shadow:none}
+.check{display:flex;gap:12px;align-items:flex-start;font-size:14px;color:var(--text-2);text-align:left}
+.check .box{width:24px;height:24px;border-radius:7px;border:1.5px solid var(--border-strong);flex:none;display:grid;place-items:center;background:var(--surface)}
+.check[aria-checked="true"] .box{background:var(--accent-strong);border-color:var(--accent-strong);color:#fff}
+.pub-done{padding:40px max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:28px}
+.pub-done h1{margin:0;font-size:30px;font-weight:800;letter-spacing:-.02em;text-align:center;text-wrap:balance}
+.confirm-card{background:var(--surface);border-radius:24px;padding:16px;box-shadow:var(--shadow-float);display:flex;flex-direction:column;gap:12px}
+.confirm-photo{height:150px;border-radius:16px}
+.chat{flex:1;display:flex;flex-direction:column;background:var(--surface-2);min-height:100%}
+.chat-h{display:flex;align-items:center;gap:12px;padding:10px 16px;background:rgba(255,255,255,.94);border-bottom:1px solid var(--hairline);color:var(--text)}
+.chat-h small{display:block;color:var(--text-2);font-size:12px}
+.chat-b{flex:1;padding:16px;display:flex;flex-direction:column;gap:8px;justify-content:flex-end}
+.bub{max-width:80%;padding:10px 12px;border-radius:16px;font-size:15px;box-shadow:0 1px 1px rgba(0,60,112,.06)}
+.bub.me{align-self:flex-end;background:#d6e7ff;border-bottom-right-radius:4px}
+.bub.them{align-self:flex-start;background:#fff;border-bottom-left-radius:4px}
+.bub small{display:block;text-align:right;color:var(--text-2);font-size:11px;margin-top:2px}
+.chat-in{display:flex;gap:8px;padding:10px max(12px,env(safe-area-inset-right,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));background:var(--surface);border-top:1px solid var(--hairline)}
+.chat-in div{flex:1;background:var(--surface-2);border-radius:var(--pill);padding:12px 16px;font-size:15px;min-height:46px}
+.chat-in button{width:46px;height:46px;border-radius:50%;background:var(--accent-strong);color:#fff;display:grid;place-items:center;flex:none}
+.sim{font-size:12px;text-align:center;color:var(--text-2);padding:6px;background:var(--surface)}
+.exit-proto{position:absolute;top:calc(8px + env(safe-area-inset-top,0px));right:max(8px,env(safe-area-inset-right,0px));z-index:20;font-size:12px;font-weight:600;background:rgba(255,255,255,.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);color:var(--accent-text);border-radius:var(--pill);padding:7px 12px;box-shadow:0 2px 10px rgba(0,60,112,.12),inset 0 0 0 1px rgba(0,60,112,.06)}
+@media (min-width:1000px){.exit-proto{display:none}}
+@media (max-width:999px){.urlbar{padding-right:150px}.sim{text-align:left;padding-left:16px;padding-right:150px}}
+
+/* Avisos */
+.toast-root{position:absolute;left:16px;right:16px;bottom:calc(12px + var(--nav-h) + 128px);display:flex;justify-content:center;z-index:60;pointer-events:none}
+.toast{pointer-events:auto;background:rgba(255,255,255,.95);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);color:var(--text);border-radius:16px;padding:12px 14px 12px 16px;display:flex;align-items:center;gap:14px;font-size:14px;font-weight:600;box-shadow:var(--shadow-float),inset 0 0 0 1px rgba(0,60,112,.06);animation:up .2s ease;max-width:100%}
+.toast button{color:var(--accent-text);font-weight:700;padding:6px 8px;border-radius:8px}
+
+/* Gato */
+.cat-layer{position:absolute;inset:0;pointer-events:none;z-index:40}
+.cat{position:absolute;left:0;width:48px;height:36px;pointer-events:auto;cursor:pointer;transition:bottom .15s ease}
+.cat .spr{width:48px;height:36px;display:block;transform-origin:center}
+.cat .spr svg{display:block;width:48px;height:36px;image-rendering:pixelated}
+.cat.jump .spr{animation:jump .6s ease}
+.zz{position:absolute;top:-14px;right:-4px;font-size:12px;font-weight:800;color:var(--text-2);animation:zz 2s ease-in-out infinite}
+.cat-pop{position:absolute;width:250px;background:var(--surface);border-radius:18px;box-shadow:var(--shadow-float),0 2px 8px rgba(0,60,112,.08);padding:8px;pointer-events:auto;animation:pop .18s ease;border:1px solid var(--hairline)}
+.cat-pop .msg{padding:8px 10px;font-size:14px;line-height:1.4}
+.cat-pop .msg b{display:block;margin-bottom:2px}
+.cat-pop .acts{display:flex;gap:6px;padding:4px 6px 6px;flex-wrap:wrap}
+.cat-pop .menu-list button{min-height:44px;padding:0 10px;border-radius:12px;font-size:14px}
+.cat-pop .menu-list button + button{border-top:0}
+.cat-pop .menu-list button:hover{background:var(--surface-2)}
+.guide{position:absolute;inset:0;z-index:50}
+.ring{position:absolute;border-radius:18px;box-shadow:0 0 0 4px var(--accent),0 0 0 9999px rgba(0,30,60,.42);pointer-events:none;animation:pulse 1.4s ease-in-out infinite}
+.guide-tip{position:absolute;left:16px;right:16px;background:var(--surface);border-radius:18px;padding:14px 16px;box-shadow:var(--shadow-float);display:flex;flex-direction:column;gap:10px;font-size:15px}
+.guide-tip .r{display:flex;align-items:center;gap:10px}
+.guide-tip .mini svg{width:32px;height:24px;flex:none}
+
+@keyframes up{from{transform:translateY(24px);opacity:0}to{transform:none;opacity:1}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes pop{from{transform:translateY(6px) scale(.97);opacity:0}to{transform:none;opacity:1}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes jump{0%,100%{translate:0 0}40%{translate:0 -16px}70%{translate:0 0}85%{translate:0 -5px}}
+@keyframes zz{0%,100%{opacity:.3;transform:translateY(0)}50%{opacity:1;transform:translateY(-4px)}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 4px var(--accent),0 0 0 9999px rgba(0,30,60,.42)}50%{box-shadow:0 0 0 8px var(--accent),0 0 0 9999px rgba(0,30,60,.42)}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="stage">
+  <aside class="panel" id="panel" aria-label="Panel de prueba"></aside>
+  <div class="device">
+    <div class="app" id="app">
+      <main class="screen" id="screen"></main>
+      <nav class="nav" id="nav" aria-label="Secciones"></nav>
+      <div class="cat-layer" id="cat-layer"></div>
+      <div id="guide-root"></div>
+      <div id="sheet-root"></div>
+      <div class="toast-root" id="toast-root" aria-live="polite"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+'use strict';
+/* ---------- utilidades ---------- */
+const $ = (s, r = document) => r.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const RM = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+const store = {
+  get(k) { try { return localStorage.getItem('catmin-proto-' + k); } catch (e) { return null; } },
+  set(k, v) { try { localStorage.setItem('catmin-proto-' + k, v); } catch (e) {} }
+};
+const MXN = new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN', maximumFractionDigits: 0 });
+const money = n => MXN.format(Math.round(n));
+const WD = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+const WDS = ['dom', 'lun', 'mar', 'mié', 'jue', 'vie', 'sáb'];
+const MO = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+const T0 = new Date(); T0.setHours(0, 0, 0, 0);
+const dateOf = off => { const d = new Date(T0); d.setDate(d.getDate() + off); return d; };
+const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+function fmtDay(off, long) {
+  const d = dateOf(off);
+  const base = `${WD[d.getDay()]} ${d.getDate()} de ${MO[d.getMonth()]}`;
+  if (off === 0) return long ? 'Hoy, ' + base : 'Hoy';
+  if (off === 1) return long ? 'Mañana, ' + base : 'Mañana';
+  if (off === -1) return 'Ayer';
+  return cap(base);
+}
+function fmtAgo(ago) {
+  if (ago <= 0) return 'Hoy';
+  if (ago === 1) return 'Ayer';
+  if (ago < 7) return `Hace ${ago} días`;
+  if (ago < 30) { const w = Math.round(ago / 7); return w === 1 ? 'Hace 1 semana' : `Hace ${w} semanas`; }
+  if (ago < 365) { const m = Math.round(ago / 30); return m === 1 ? 'Hace 1 mes' : `Hace ${m} meses`; }
+  return 'Hace más de un año';
+}
+const NB = '\u00a0';
+const hm = min => `${Math.floor(min / 60) % 12 || 12}:${String(min % 60).padStart(2, '0')}`;
+const ampm = min => (min < 720 ? `a.${NB}m.` : `p.${NB}m.`);
+const fmtTime = min => `${hm(min)}${NB}${ampm(min)}`;
+const fmtTimeShort = min => `${hm(min)}${NB}${min < 720 ? 'am' : 'pm'}`;
+const initials = n => n.split(' ').filter(Boolean).slice(0, 2).map(w => w[0]).join('').toUpperCase();
+const uid = p => p + Math.random().toString(36).slice(2, 8);
+const num = v => { const n = parseFloat(String(v).replace(/[^0-9.]/g, '')); return isNaN(n) ? 0 : n; };
+
+/* ---------- íconos ---------- */
+const ICONS = {
+  home: '<path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>',
+  cal: '<rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/>',
+  users: '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"/>',
+  cash: '<rect x="2.5" y="6" width="19" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.8"/><path d="M6 9.5v5M18 9.5v5"/>',
+  plus: '<path d="M12 5v14M5 12h14"/>',
+  back: '<path d="M15 5l-7 7 7 7"/>',
+  search: '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
+  check: '<path d="m5 12.5 4.5 4.5L19 7"/>',
+  x: '<path d="M6 6l12 12M18 6 6 18"/>',
+  chat: '<path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/>',
+  lock: '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
+  print: '<path d="M7 9V3h10v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 14h10v7H7z"/>',
+  doc: '<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/>',
+  off: '<path d="M3 3l18 18M8.5 16.5a5 5 0 0 1 7 0M12 20h.01M5 12.9a10 10 0 0 1 4.3-2.6M19 12.9a10 10 0 0 0-2.1-1.6M2 8.8a15 15 0 0 1 4.2-2.6M22 8.8A15 15 0 0 0 12 5"/>',
+  pin: '<path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>',
+  send: '<path d="M4 12 20 4l-6 16-3-7z"/>',
+  right: '<path d="m9 5 7 7-7 7"/>',
+  shield: '<path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6z"/><path d="m9 12 2 2 4-4"/>',
+  card: '<rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19"/>',
+  transfer: '<path d="M4 8h14l-3-3M20 16H6l3 3"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  note: '<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/>',
+  phone: '<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/>',
+  gear: '<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>',
+  globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>',
+  team: '<circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/>',
+  help: '<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7M12 17h.01"/>',
+  eye: '<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+  moon: '<path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/>',
+  minus: '<path d="M5 12h14"/>',
+  reset: '<path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/>'
+};
+const chev = () => `<span class="chev">${ic('right', 18, 2.2)}</span>`;
+const proName = g => g.pro.replace(/^(Dra?\.|Psic\.|Nut\.)\s/, '');
+const syncHTML = () => S.offline ? '<span class="sync"><i class="dot off"></i>Sin conexión</span>' : '<span class="sync"><i class="dot"></i>Al día</span>';
+const ic = (n, s = 22, sw = 1.8) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[n] || ''}</svg>`;
+
+/* ---------- gato (pixel art original) ---------- */
+const SPR = {
+  walk1: ['..........o....o', '..........op..po', 't.........okkkko', 'tt........okekek', 'tt........okkkpk', '.tt.......okkkkk', '..ofxffxffxffff.', '..offffffffffffo', '..oxffxffxffxffo', '..ollllllllllffo', '...og.og..og.og.', '...oo.oo..oo.oo.'],
+  walk2: ['..........o....o', '..........op..po', 't.........okkkko', 'tt........okekek', 'tt........okkkpk', '.tt.......okkkkk', '..ofxffxffxffff.', '..offffffffffffo', '..oxffxffxffxffo', '..ollllllllllffo', '..og..og.og..og.', '..oo..oo.oo..oo.'],
+  sit: ['..........o....o', '..........op..po', '..........okkkko', '..........okekek', '..........okkkpk', '.........okkkkk.', '......oofffffo..', '.....offxffxffo.', '....oxffffffffo.', 't...ollllllfffo.', 'tt..olllllgffgo.', '.tooooooooooooo.'],
+  sleep: ['................', '................', '................', '................', '................', '..........o...o.', '..........op.po.', '...oooooookkkkko', '..offxffxkokkokk', '..offffffkkkkpko', '.tollllllllllllo', 'tt.ooooooooooooo']
+};
+const CATS = {
+  naranja: { name: 'Naranja', accent: '#C2410C', soft: '#FBEDE6', o: '#5A2E12', f: '#E8893A', l: '#F7C99A', x: '#C9662A', t: '#E8893A', k: '#E8893A', g: '#E8893A', p: '#F29CA3', e: '#1C1C1E' },
+  negro: { name: 'Negro', accent: '#1C1C1E', soft: '#ECEAE6', o: '#0E0E10', f: '#2B2B2F', l: '#3B3B40', x: '#2B2B2F', t: '#2B2B2F', k: '#2B2B2F', g: '#2B2B2F', p: '#D98A93', e: '#F2C94C' },
+  siames: { name: 'Siamés', accent: '#7A5640', soft: '#F3ECE6', o: '#3E2A1F', f: '#EADCC6', l: '#F7F0E4', x: '#EADCC6', t: '#6B4A35', k: '#6B4A35', g: '#6B4A35', p: '#D9A0A0', e: '#7FB3E6' },
+  atigrado: { name: 'Atigrado', accent: '#5B6474', soft: '#ECEEF1', o: '#2F3237', f: '#9A948C', l: '#D6D0C7', x: '#5E5A55', t: '#9A948C', k: '#9A948C', g: '#9A948C', p: '#E3A0A6', e: '#3C6E3A' },
+  blanco: { name: 'Blanco', accent: '#2F66B3', soft: '#E9F0FA', o: '#8C96A3', f: '#FBFBFB', l: '#FFFFFF', x: '#FBFBFB', t: '#FBFBFB', k: '#FBFBFB', g: '#FBFBFB', p: '#F4A7B1', e: '#2F66B3' }
+};
+function catSVG(key, pal, flip) {
+  const rows = SPR[key].map(r => r.padEnd(16, '.').slice(0, 16));
+  let rects = '';
+  rows.forEach((row, y) => {
+    let x = 0;
+    while (x < 16) {
+      const ch = row[x];
+      if (ch === '.') { x++; continue; }
+      let w = 1; while (x + w < 16 && row[x + w] === ch) w++;
+      rects += `<rect x="${x}" y="${y}" width="${w}" height="1" fill="${pal[ch] || pal.f}"/>`;
+      x += w;
+    }
+  });
+  return `<svg viewBox="0 0 16 12" shape-rendering="crispEdges" aria-hidden="true"${flip ? ' style="transform:scaleX(-1)"' : ''}>${rects}</svg>`;
+}
+
+/* ---------- datos por giro ---------- */
+const GIROS = {
+  dental: {
+    label: 'Dental', client: 'paciente', clients: 'pacientes', Client: 'Paciente', Clients: 'Pacientes', record: 'Expediente',
+    biz: 'Consultorio Dental Sonrisa', pro: 'Dra. Ana López', first: 'Ana', title: 'Cirujana dentista', cedula: '12345678',
+    slug: 'dra-ana-lopez', area: 'Del Valle, CDMX', address: 'Av. Coyoacán 1435, Col. Del Valle, CDMX', hours: 'Lunes a viernes 9:00–19:00 · Sábado 9:00–14:00',
+    bio: 'Odontología general y estética. Atención con cita, sin prisas y explicándote cada paso.',
+    services: [['Limpieza dental', 600, 45], ['Valoración', 300, 30], ['Resina', 900, 60], ['Extracción simple', 1200, 60], ['Blanqueamiento', 3500, 90]],
+    products: [['Cepillo dental suave', 80], ['Hilo dental', 60], ['Enjuague bucal', 140]],
+    names: ['Laura Méndez', 'Jorge Ramírez', 'Sofía Torres', 'Ricardo Núñez', 'Mariana Cruz', 'Pedro Aguilar', 'Fernanda Gómez'],
+    doc: { label: 'Receta', title: 'Receta médica', field: 'Indicaciones' },
+    note: { name: 'Nota de evolución', fields: [['Motivo de la consulta', 'text'], ['Procedimiento realizado', 'area'], ['Indicaciones', 'area']] },
+    t1: { client: 2, service: 0 }, t3service: 0, t3other: 'transfer',
+    tasks: ['Agenda una cita para Sofía Torres mañana a las 5 de la tarde, para una limpieza dental.', 'Laura Méndez viene hoy. Revisa qué le hicieron la última vez.', 'La cita de Jorge Ramírez acaba de terminar. Cóbrale: pagó $300 en efectivo y el resto por transferencia.', 'Ahora eres un paciente nuevo que encontró este consultorio en Google. Reserva una cita.'],
+    records: {
+      0: [
+        { ago: 21, title: 'Nota de evolución', body: [['Motivo', 'Sensibilidad al frío en molar inferior izquierdo.'], ['Procedimiento', 'Resina en pieza 36, cara oclusal. Sin complicaciones.'], ['Indicaciones', 'Pasta para dientes sensibles dos veces al día. Control en 6 meses.']] },
+        { ago: 120, title: 'Limpieza dental', body: [['Procedimiento', 'Profilaxis completa. Sangrado leve en encía inferior anterior.'], ['Indicaciones', 'Reforzar técnica de cepillado e hilo dental diario.']] },
+        { ago: 380, title: 'Historia clínica', body: [['Antecedentes', 'Sin alergias conocidas. No fuma.'], ['Motivo de primera visita', 'Revisión general y limpieza.']] }
+      ],
+      1: [{ ago: 180, title: 'Nota de evolución', body: [['Procedimiento', 'Limpieza y valoración. Caries incipiente en pieza 17.'], ['Indicaciones', 'Programar resina.']] }],
+      _: [{ ago: 200, title: 'Historia clínica', body: [['Antecedentes', 'Sin antecedentes relevantes.']] }]
+    },
+    plan: { client: 0, name: 'Resinas en piezas 36, 46 y 26', total: 2700, paid: 1800 }
+  },
+  psicologia: {
+    label: 'Psicología', client: 'paciente', clients: 'pacientes', Client: 'Paciente', Clients: 'Pacientes', record: 'Expediente',
+    biz: 'Espacio Calma Psicología', pro: 'Psic. Daniel Herrera', first: 'Daniel', title: 'Psicólogo clínico', cedula: '23456789',
+    slug: 'psic-daniel-herrera', area: 'Coyoacán, CDMX', address: 'Francisco Sosa 210, Coyoacán, CDMX', hours: 'Lunes a viernes 10:00–20:00',
+    bio: 'Terapia cognitivo-conductual para adultos: ansiedad, estrés y relaciones. Presencial y en línea.',
+    services: [['Sesión individual', 700, 50], ['Primera consulta', 500, 60], ['Terapia de pareja', 950, 80], ['Sesión en línea', 650, 50]],
+    products: [],
+    names: ['Laura Méndez', 'Jorge Ramírez', 'Sofía Torres', 'Ricardo Núñez', 'Mariana Cruz', 'Pedro Aguilar', 'Fernanda Gómez'],
+    doc: { label: 'Indicaciones', title: 'Indicaciones', field: 'Tarea para casa' },
+    note: { name: 'Nota de sesión', private: true, fields: [['Temas trabajados', 'area'], ['Observaciones', 'area'], ['Tarea para casa', 'area']] },
+    t1: { client: 2, service: 0 }, t3service: 0, t3other: 'transfer',
+    tasks: ['Agenda una cita para Sofía Torres mañana a las 5 de la tarde, para una sesión individual.', 'Laura Méndez viene hoy. Revisa qué trabajaron en su última sesión.', 'La sesión de Jorge Ramírez acaba de terminar. Cóbrale: pagó $300 en efectivo y el resto por transferencia.', 'Ahora eres alguien que busca terapia y encontró este perfil en Google. Reserva una cita.'],
+    records: {
+      0: [
+        { ago: 7, title: 'Nota de sesión 8', private: true, body: [['Temas trabajados', 'Estrés laboral y dificultad para poner límites. Revisamos su registro de pensamientos de la semana.'], ['Observaciones', 'Identifica mejor los pensamientos automáticos. Menos ansiedad los lunes.'], ['Tarea para casa', 'Respiración 4-7-8 antes de juntas. Registrar 3 situaciones.']] },
+        { ago: 14, title: 'Nota de sesión 7', private: true, body: [['Temas trabajados', 'Introducción al registro de pensamientos.'], ['Tarea para casa', 'Registro diario.']] },
+        { ago: 63, title: 'Primera entrevista', private: true, body: [['Motivo de consulta', 'Ansiedad relacionada con el trabajo e insomnio ocasional.'], ['Objetivo', 'Reducir la ansiedad y mejorar el sueño.']] }
+      ],
+      1: [{ ago: 7, title: 'Nota de sesión 3', private: true, body: [['Temas trabajados', 'Adaptación tras cambio de ciudad.'], ['Tarea para casa', 'Escribir 3 cosas que extraña y 3 que le gustan de su nueva colonia.']] }],
+      _: [{ ago: 40, title: 'Primera entrevista', private: true, body: [['Motivo de consulta', 'Estrés y cansancio constante.']] }]
+    }
+  },
+  nutricion: {
+    label: 'Nutrición', client: 'paciente', clients: 'pacientes', Client: 'Paciente', Clients: 'Pacientes', record: 'Expediente',
+    biz: 'Nutrición Balance', pro: 'Nut. Valeria Ríos', first: 'Valeria', title: 'Licenciada en Nutrición', cedula: '34567890',
+    slug: 'nut-valeria-rios', area: 'Narvarte, CDMX', address: 'Eje Central 1020, Narvarte, CDMX', hours: 'Lunes a sábado 8:00–18:00',
+    bio: 'Planes de alimentación realistas para bajar de peso, ganar músculo o controlar la glucosa.',
+    services: [['Primera consulta', 650, 60], ['Seguimiento', 450, 40], ['Plan deportivo', 800, 60], ['Medición corporal', 250, 20]],
+    products: [['Proteína whey 1 kg', 890], ['Shaker', 150]],
+    names: ['Laura Méndez', 'Jorge Ramírez', 'Sofía Torres', 'Ricardo Núñez', 'Mariana Cruz', 'Pedro Aguilar', 'Fernanda Gómez'],
+    doc: { label: 'Plan', title: 'Plan de alimentación', field: 'Ajustes al plan' },
+    note: { name: 'Seguimiento', fields: [['Peso (kg)', 'num'], ['% de grasa', 'num'], ['Notas', 'area'], ['Ajustes al plan', 'area']] },
+    t1: { client: 2, service: 1 }, t3service: 1, t3other: 'transfer',
+    tasks: ['Agenda una cita para Sofía Torres mañana a las 5 de la tarde, para un seguimiento.', 'Laura Méndez viene hoy. Revisa cómo le fue en su último seguimiento.', 'La consulta de Jorge Ramírez acaba de terminar. Cóbrale: pagó $300 en efectivo y el resto por transferencia.', 'Ahora eres un paciente nuevo que encontró este perfil en Google. Reserva una cita.'],
+    records: {
+      0: [
+        { ago: 14, title: 'Seguimiento', body: [['Peso', '68.9 kg (−0.7 kg)'], ['% de grasa', '29.8 %'], ['Notas', 'Buena adherencia entre semana; los fines de semana le cuestan más.'], ['Ajustes al plan', 'Más proteína en la cena y una colación a media tarde.']] },
+        { ago: 30, title: 'Seguimiento', body: [['Peso', '69.6 kg (−0.7 kg)'], ['Notas', 'Empezó a caminar 30 minutos diarios.']] },
+        { ago: 120, title: 'Historia clínica nutricional', body: [['Objetivo', 'Bajar 6 kg de forma sostenible.'], ['Hábitos', 'Desayuna poco, cena tarde.']] }
+      ],
+      1: [{ ago: 30, title: 'Seguimiento', body: [['Peso', '82.1 kg (−1.2 kg)'], ['Ajustes al plan', 'Mantener plan actual.']] }],
+      _: [{ ago: 60, title: 'Historia clínica nutricional', body: [['Objetivo', 'Mejorar hábitos de alimentación.']] }]
+    },
+    weights: [[120, 72.4], [90, 71.1], [60, 70.3], [30, 69.6], [14, 68.9]]
+  },
+  barberia: {
+    label: 'Barbería', client: 'cliente', clients: 'clientes', Client: 'Cliente', Clients: 'Clientes', record: 'Ficha',
+    biz: 'Barbería El Bigote', pro: 'Luis Ortega', first: 'Luis', title: 'Barbero', cedula: null,
+    slug: 'barberia-el-bigote', area: 'Roma Norte, CDMX', address: 'Colima 180, Roma Norte, CDMX', hours: 'Martes a domingo 10:00–20:00',
+    bio: 'Cortes clásicos y fades, perfilado de barba y toalla caliente. Reserva y llega a tu hora.',
+    services: [['Corte', 180, 40], ['Corte y barba', 260, 60], ['Barba', 120, 30], ['Diseño', 80, 20]],
+    products: [['Pomada', 220], ['Aceite para barba', 250], ['Cera mate', 200]],
+    names: ['Carlos Díaz', 'Jorge Ramírez', 'Miguel Soto', 'Raúl Pérez', 'Andrés Molina', 'Diego Herrera', 'Iván Castro'],
+    doc: null,
+    note: { name: 'Visita', fields: [['Corte realizado', 'text'], ['Observaciones', 'area']] },
+    t1: { client: 2, service: 1 }, t3service: 0, t3other: 'card',
+    tasks: ['Agenda una cita para Miguel Soto mañana a las 5 de la tarde, para corte y barba.', 'Carlos Díaz viene hoy. Revisa qué corte se hizo la vez pasada.', 'El corte de Jorge Ramírez acaba de terminar. Cóbrale el corte y una pomada: pagó $300 en efectivo y el resto con tarjeta.', 'Ahora eres un cliente nuevo que encontró la barbería en Google. Reserva una cita.'],
+    records: {
+      0: [
+        { ago: 21, title: 'Visita', body: [['Corte realizado', 'Fade bajo con máquina #1, arriba tijera.'], ['Observaciones', 'Pidió dejarlo un poco más largo arriba la próxima vez.']] },
+        { ago: 49, title: 'Visita', body: [['Corte realizado', 'Fade medio #0.5.'], ['Observaciones', 'Le quedó muy corto; prefiere bajo.']] }
+      ],
+      1: [{ ago: 28, title: 'Visita', body: [['Corte realizado', 'Corte clásico con tijera.']] }],
+      _: [{ ago: 30, title: 'Visita', body: [['Corte realizado', 'Corte clásico con tijera.']] }]
+    },
+    prefs: { client: 0, items: [['Corte', 'Fade bajo, #1 a los lados, tijera 3 cm arriba.'], ['Barba', 'Perfilada, sin bajar de la mandíbula.'], ['Preferencias', 'Poca cera, raya del lado izquierdo.']], photos: [21, 49, 77] }
+  }
+};
+const PHONES = ['55 1234 5678', '55 2345 6789', '55 3456 7890', '55 4567 8901', '55 5678 9012', '55 6789 0123', '55 7890 1234'];
+const METHODS = { cash: ['Efectivo', 'cash'], card: ['Tarjeta', 'card'], transfer: ['Transferencia', 'transfer'], due: ['Por cobrar', 'clock'] };
+
+/* ---------- estado ---------- */
+const S = {
+  giro: 'dental', cat: 'naranja', offline: false, view: 'app', tab: 'hoy', stack: [], day: 0,
+  sheet: null, cart: null, catTab: 'service', clientTab: 'record', openEntries: {},
+  tasks: [{}, {}, {}, {}], flags: {}, data: null, pub: null, cobrarQ: '', clientsQ: ''
+};
+const G = () => GIROS[S.giro];
+const svc = id => S.data.items.find(i => i.id === id);
+const cli = id => S.data.clients.find(c => c.id === id);
+
+function buildData() {
+  const g = G();
+  const items = [
+    ...g.services.map((s, i) => ({ id: 's' + i, type: 'service', name: s[0], price: s[1], dur: s[2] })),
+    ...g.products.map((p, i) => ({ id: 'p' + i, type: 'product', name: p[0], price: p[1] }))
+  ];
+  const clients = g.names.map((n, i) => ({ id: 'c' + i, name: n, phone: PHONES[i], age: [34, 41, 27, 52, 30, 45, 23][i] }));
+  const records = {};
+  clients.forEach((c, i) => {
+    const src = g.records[i] || g.records._;
+    records[c.id] = src.map((r, j) => ({ id: `r${i}_${j}`, ...r, author: g.pro }));
+  });
+  const s = i => 's' + Math.min(i, g.services.length - 1);
+  const A = (c, sv, day, h, m, status, extra) => ({ id: uid('a'), clientId: 'c' + c, serviceId: s(sv), day, start: h * 60 + m, status, paid: false, ...extra });
+  const appts = [
+    A(1, g.t3service, 0, 9, 0, 'completed'),
+    A(4, 1, 0, 10, 0, 'completed', { paid: true }),
+    A(0, 0, 0, 12, 0, 'confirmed'),
+    A(3, 2, 0, 13, 30, 'pending'),
+    A(5, 0, 0, 16, 0, 'confirmed'),
+    A(6, 1, 0, 18, 0, 'pending'),
+    A(4, 0, 1, 10, 0, 'confirmed'),
+    A(3, 1, 1, 13, 0, 'confirmed'),
+    A(6, 0, 1, 18, 0, 'pending'),
+    A(0, 1, 2, 9, 30, 'confirmed'),
+    A(5, 2, 2, 11, 0, 'confirmed'),
+    A(1, 0, 3, 12, 0, 'confirmed'),
+    A(2, 1, 4, 10, 30, 'pending'),
+    A(0, 0, -21, 11, 0, 'completed', { paid: true }),
+    A(1, 0, -28, 12, 0, 'completed', { paid: true }),
+    A(2, 1, -45, 16, 0, 'completed', { paid: true }),
+    A(3, 0, -60, 10, 0, 'completed', { paid: true })
+  ];
+  const sales = appts.filter(a => a.paid).map(a => {
+    const it = items.find(i => i.id === a.serviceId);
+    return { id: uid('v'), clientId: a.clientId, day: a.day, apptId: a.id, lines: [{ name: it.name, price: it.price, qty: 1 }], total: it.price, payments: [{ method: a.day === 0 ? 'card' : 'cash', amount: it.price }] };
+  });
+  return { items, clients, records, appts, sales };
+}
+
+function resetAll() {
+  S.data = buildData(); S.stack = []; S.tab = 'hoy'; S.day = 0; S.sheet = null; S.cart = null;
+  S.tasks = [{}, {}, {}, {}]; S.flags = {}; S.view = 'app'; S.pub = null; S.openEntries = {}; S.cobrarQ = ''; S.clientsQ = ''; S.clientTab = 'record';
+}
+
+/* ---------- tareas ---------- */
+function checkTasks() {
+  const g = G(), d = S.data;
+  const tc = 'c' + g.t1.client;
+  const done = [
+    d.appts.some(a => a.clientId === tc && a.day === 1 && a.start === 17 * 60 && a.status !== 'cancelled'),
+    !!S.flags.t2,
+    d.sales.some(v => v.clientId === 'c1' && v.isNew && v.payments.filter(p => p.amount > 0).length >= 2),
+    !!S.flags.t4
+  ];
+  done.forEach((ok, i) => {
+    const t = S.tasks[i];
+    if (ok && !t.done) { t.done = true; t.elapsed = t.start ? Date.now() - t.start : null; }
+  });
+}
+const fmtElapsed = ms => { const s = Math.round(ms / 1000); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`; };
+
+/* ---------- textos de ayuda del gato ---------- */
+function helpFor() {
+  const g = G();
+  const ctx = currentCtx();
+  const H = {
+    hoy: ['Tu día', 'Aquí ves lo que llevas cobrado hoy y tus citas. Toca una cita para confirmarla, cobrarla o abrir su ' + g.record.toLowerCase() + '.', '[data-guide="hoy"]', 'Con este botón agendas una cita nueva.'],
+    agenda: ['Tu agenda', 'Cambia de día arriba. Toca un espacio libre para agendar justo a esa hora, o una cita para ver sus opciones.', '[data-guide="agenda"]', 'Toca aquí para agendar una cita.'],
+    clientes: ['Tus ' + g.clients, `Busca por nombre o teléfono y toca a alguien para ver su ${g.record.toLowerCase()}, sus citas y sus pagos.`, '[data-guide="clientes"]', 'Escribe aquí el nombre para buscar.'],
+    cliente: [g.record, `Lo más reciente aparece primero y marcado. Toca una nota para verla completa.`, '[data-guide="cliente"]', 'Esta es la última nota. Tócala para leerla completa.'],
+    cobrar: ['Cobrar', 'Toca lo que vas a cobrar, o una cita pendiente de cobro. Después eliges cómo te pagaron.', '[data-guide="cobrar"]', 'Empieza tocando un servicio o producto.'],
+    na: ['Nueva cita', 'Elige a quién, qué servicio, el día y la hora. El botón de abajo se activa cuando esté todo.', null, null],
+    pay: ['Formas de pago', 'Puedes combinar: toca Efectivo, escribe cuánto te dieron, y luego toca la otra forma de pago. El resto se ajusta solo.', '[data-guide="pay"]', 'Toca la forma de pago que te dieron.'],
+    appt: ['Detalle de la cita', 'Desde aquí confirmas, cobras o abres el ' + g.record.toLowerCase() + '.', '[data-guide="appt"]', 'Este es el siguiente paso más común.'],
+    note: ['Nueva nota', 'Llena lo que necesites; nada es obligatorio. Se guarda con la fecha de hoy.', null, null],
+    perfil: ['Tu perfil', 'Aquí cambias tu gato, ves tu perfil público y la configuración.', null, null]
+  };
+  return H[ctx] || ['Aquí estoy', 'Si te atoras, tócame y te explico la pantalla.', null, null];
+}
+function currentCtx() {
+  if (S.view === 'public') return 'public';
+  if (S.sheet) return S.sheet.type;
+  if (S.stack.length) return 'cliente';
+  return S.tab;
+}
+
+/* ---------- render principal ---------- */
+function render() {
+  checkTasks();
+  applyAccent();
+  renderScreen();
+  renderNav();
+  renderSheet();
+  renderPanel();
+  placeCat(true);
+}
+function applyAccent() { /* acento fijo: azul #0d76ff; elegir gato solo cambia la mascota */ }
+function renderNav() {
+  const nav = $('#nav');
+  if (S.view === 'public') { nav.hidden = true; return; }
+  nav.hidden = false;
+  const tabs = [['hoy', 'Hoy', 'home'], ['agenda', 'Agenda', 'cal'], ['clientes', G().Clients, 'users'], ['cobrar', 'Cobrar', 'cash']];
+  const tb = ([k, l, i]) => `<button class="tab" data-a="tab" data-v="${k}" ${S.tab === k ? 'aria-current="page"' : ''}>${ic(i, 22)}<span>${l}</span></button>`;
+  nav.innerHTML = tabs.slice(0, 2).map(tb).join('') + `<button class="plus" data-a="quick" aria-label="Crear: nueva cita, cobro o ${G().client} nuevo">${ic('plus', 26, 2.4)}</button>` + tabs.slice(2).map(tb).join('');
+}
+function offlineBar() {
+  return S.offline ? `<div class="offline-bar" role="status">${ic('off', 20)}<span>Sin conexión. Puedes consultar todo; para guardar cambios necesitas internet.</span></div>` : '';
+}
+function statusChip(a) {
+  if (a.status === 'cancelled') return '<span class="chip bad">Cancelada</span>';
+  if (a.status === 'completed') return a.paid ? '<span class="chip neutral">Pagada</span>' : '<span class="chip due">Por cobrar</span>';
+  if (a.status === 'pending') return '<span class="chip warn">Por confirmar</span>';
+  return '<span class="chip ok">Confirmada</span>';
+}
+function renderScreen() {
+  const el = $('#screen');
+  const prevKey = el.dataset.key, key = S.view + S.tab + (S.stack.at(-1)?.id || '') + (S.pub?.step || '');
+  const st = el.scrollTop;
+  el.className = 'screen';
+  if (S.view === 'public') { el.classList.add('public'); if (S.pub.step === 'wa' || S.pub.step === 'waSent') el.classList.add('chatmode'); if (S.pub.step === 'done') el.classList.add('done'); el.innerHTML = renderPublic(); }
+  else if (S.stack.length) el.innerHTML = renderClient(S.stack.at(-1).id);
+  else el.innerHTML = ({ hoy: renderHoy, agenda: renderAgenda, clientes: renderClientes, cobrar: renderCobrar })[S.tab]();
+  el.dataset.key = key;
+  if (prevKey === key) el.scrollTop = st; else el.scrollTop = 0;
+  const app = $('#app');
+  app.querySelectorAll('.fab,.cartbar,.pub-sticky,.exit-proto').forEach(n => n.remove());
+  if (S.view === 'public') {
+    app.insertAdjacentHTML('beforeend', `<button class="exit-proto" data-a="viewApp">Volver a la app</button>`);
+    const stickyHTML = pubSticky(); if (stickyHTML) app.insertAdjacentHTML('beforeend', stickyHTML);
+  } else if (!S.stack.length && S.tab === 'cobrar' && S.cart && S.cart.lines.length) {
+    const n = S.cart.lines.reduce((a, l) => a + l.qty, 0);
+    app.insertAdjacentHTML('beforeend', `<div class="cartbar"><div class="grow"><small>${n} ${n === 1 ? 'artículo' : 'artículos'}${S.cart.clientId ? ' · ' + esc(cli(S.cart.clientId).name) : ''}</small><b class="tnum">${money(cartTotal())}</b></div><button class="btn btn-primary" data-a="checkout">Cobrar</button></div>`);
+  }
+}
+
+/* ---------- Hoy ---------- */
+function renderHoy() {
+  const g = G(), d = S.data;
+  const today = d.appts.filter(a => a.day === 0 && a.status !== 'cancelled').sort((a, b) => a.start - b.start);
+  const cobrado = d.sales.filter(v => v.day === 0).reduce((a, v) => a + v.payments.filter(p => p.method !== 'due').reduce((x, p) => x + p.amount, 0), 0);
+  const attended = today.filter(a => a.status === 'completed').length;
+  const pct = today.length ? Math.round(attended / today.length * 100) : 0;
+  const pend = d.appts.filter(a => a.day >= 0 && a.status === 'pending').length;
+  const porCobrar = today.filter(a => a.status === 'completed' && !a.paid).length;
+  const web = d.appts.filter(a => a.source === 'web' && !a.seen);
+  const hour = new Date().getHours();
+  const greet = hour < 12 ? 'Buenos días' : hour < 19 ? 'Buenas tardes' : 'Buenas noches';
+  const rows = [];
+  if (web.length) rows.push(`<button class="row" data-a="openAppt" data-id="${web[0].id}"><span class="ico" style="--c:var(--info)">${ic('globe', 18, 2)}</span><span class="grow"><span class="t1">Nueva cita reservada en línea</span><span class="t2">${esc(cli(web[0].clientId).name)} · ${fmtDay(web[0].day)} ${fmtTime(web[0].start)}</span></span>${chev()}</button>`);
+  if (porCobrar) rows.push(`<button class="row" data-a="tab" data-v="cobrar"><span class="ico" style="--c:var(--warning)">${ic('cash', 18, 2)}</span><span class="grow"><span class="t1">${porCobrar} ${porCobrar === 1 ? 'cita atendida' : 'citas atendidas'} por cobrar</span><span class="t2">Toca para cobrar</span></span>${chev()}</button>`);
+  if (pend) rows.push(`<button class="row" data-a="tab" data-v="agenda"><span class="ico" style="--c:var(--amber)">${ic('clock', 18, 2)}</span><span class="grow"><span class="t1">${pend} ${pend === 1 ? 'cita' : 'citas'} por confirmar</span><span class="t2">Revisa tu agenda</span></span>${chev()}</button>`);
+  return `
+  <header class="top">
+    <div class="lt"><p class="eyebrow">${cap(fmtDay(0, true).replace('Hoy, ', ''))}</p><h1 class="title">${greet}, ${esc(g.first)}</h1><p class="sub">${esc(g.biz)} · ${syncHTML()}</p></div>
+    <button class="avatar" data-a="perfil" aria-label="Abrir tu perfil">${initials(proName(g))}</button>
+  </header>
+  ${offlineBar()}
+  <section class="summary-card" aria-label="Resumen de hoy">
+    <div><span class="k">Cobrado hoy</span><div class="big tnum">${money(cobrado)}</div></div>
+    <div class="progress"><div class="bar"><i style="width:${pct}%;background:var(--accent)"></i></div><span>${attended} de ${today.length} ${today.length === 1 ? 'cita atendida' : 'citas atendidas'}</span></div>
+    <div class="actions2">
+      <button class="btn btn-primary" data-a="newAppt" data-guide="hoy">${ic('plus', 20, 2.2)}Nueva cita</button>
+      <button class="btn btn-light" data-a="tab" data-v="cobrar">${ic('cash', 20)}Cobrar</button>
+    </div>
+  </section>
+  ${rows.length ? `<section class="section"><div class="section-h"><h2>Pendientes</h2></div><div class="list inset-ico">${rows.join('')}</div></section>` : ''}
+  <section class="section">
+    <div class="section-h"><h2>Citas de hoy</h2><button data-a="tab" data-v="agenda">Ver agenda</button></div>
+    ${today.length ? `<div class="list inset-time">${today.map(apptRow).join('')}</div>` : `<div class="card empty">No tienes citas hoy.</div>`}
+  </section>`;
+}
+function apptRow(a) {
+  const c = cli(a.clientId), sv = svc(a.serviceId);
+  return `<button class="row" data-a="openAppt" data-id="${a.id}"><span class="time tnum">${hm(a.start)}<small>${ampm(a.start)}</small></span><span class="grow"><span class="t1" style="display:block">${esc(c.name)}</span><span class="t2" style="display:block">${esc(sv.name)}${a.source === 'web' ? ' · En línea' : ''}</span></span>${statusChip(a)}</button>`;
+}
+
+/* ---------- Agenda ---------- */
+function renderAgenda() {
+  const d = S.data;
+  const days = Array.from({ length: 14 }, (_, i) => i);
+  const dd = dateOf(S.day);
+  const list = d.appts.filter(a => a.day === S.day && a.status !== 'cancelled').sort((a, b) => a.start - b.start);
+  let hours = '';
+  for (let h = 9; h < 20; h++) {
+    const inHour = list.filter(a => Math.floor(a.start / 60) === h);
+    const busy = list.some(a => a.start < h * 60 && a.start + svc(a.serviceId).dur > h * 60);
+    hours += `<div class="hour"><span class="tnum">${fmtTime(h * 60).replace(':00', '')}</span><div class="cell">${inHour.map(a => {
+      const c = cli(a.clientId), sv = svc(a.serviceId);
+      return `<button class="appt ${a.status === 'completed' ? 'done' : ''}" data-a="openAppt" data-id="${a.id}"><span class="r"><b>${esc(c.name)}</b>${statusChip(a)}</span><span>${fmtTime(a.start)} – ${fmtTime(a.start + sv.dur)} · ${esc(sv.name)}</span></button>`;
+    }).join('')}${!inHour.length && !busy ? `<button class="free" data-a="newAppt" data-day="${S.day}" data-time="${h * 60}" aria-label="Agendar a las ${fmtTime(h * 60)}">${ic('plus', 16)}Libre</button>` : ''}</div></div>`;
+  }
+  return `
+  <header class="top"><div class="lt"><p class="eyebrow">${cap(MO[dd.getMonth()])} ${dd.getFullYear()}</p><h1 class="title">Agenda</h1><p class="sub">${syncHTML()}</p></div><button class="iconbtn" data-a="newAppt" data-guide="agenda" aria-label="Nueva cita">${ic('plus', 22, 2.2)}</button></header>
+  ${offlineBar()}
+  <div class="week-card"><div class="week" role="group" aria-label="Elegir día">${days.map(i => {
+    const x = dateOf(i); const has = d.appts.some(a => a.day === i && a.status !== 'cancelled');
+    return `<button class="day${i === 0 ? ' today' : ''}" data-a="day" data-v="${i}" aria-pressed="${S.day === i}"><small>${i === 0 ? 'Hoy' : WDS[x.getDay()]}</small><b class="tnum">${x.getDate()}</b>${has ? '<i></i>' : '<i style="visibility:hidden"></i>'}</button>`;
+  }).join('')}</div></div>
+  <section class="section"><div class="section-h"><h2>${fmtDay(S.day, true)}</h2></div><div class="slots">${hours}</div></section>`;
+}
+
+/* ---------- Clientes ---------- */
+function clientListHTML() {
+  const q = S.clientsQ.trim().toLowerCase();
+  const list = S.data.clients.filter(c => !q || c.name.toLowerCase().includes(q) || c.phone.replace(/\s/g, '').includes(q.replace(/\s/g, ''))).sort((a, b) => a.name.localeCompare(b.name));
+  if (!list.length) return `<div class="card empty">No encontré a nadie con “${esc(S.clientsQ)}”.<button class="btn btn-primary btn-sm" data-a="toast" data-msg="En la app real aquí agregas a la persona nueva.">${ic('plus', 16)}Agregar ${G().client}</button></div>`;
+  return `<div class="list inset-avatar">${list.map(c => {
+    const next = S.data.appts.filter(a => a.clientId === c.id && a.day >= 0 && a.status !== 'cancelled' && a.status !== 'completed').sort((a, b) => a.day - b.day || a.start - b.start)[0];
+    const last = S.data.appts.filter(a => a.clientId === c.id && a.status === 'completed').sort((a, b) => b.day - a.day)[0];
+    const meta = next ? `Próxima cita: ${fmtDay(next.day)} ${fmtTime(next.start)}` : last ? `Última visita: ${fmtAgo(-last.day).toLowerCase()}` : c.phone;
+    return `<button class="row" data-a="openClient" data-id="${c.id}"><span class="avatar soft">${initials(c.name)}</span><span class="grow"><span class="t1" style="display:block">${esc(c.name)}</span><span class="t2" style="display:block">${esc(meta)}</span></span>${chev()}</button>`;
+  }).join('')}</div>`;
+}
+function renderClientes() {
+  const g = G();
+  return `
+  <header class="top"><div class="lt"><p class="eyebrow">${S.data.clients.length} en total</p><h1 class="title">${g.Clients}</h1></div><button class="iconbtn" data-a="toast" data-msg="En la app real aquí agregas a alguien nuevo." aria-label="Agregar ${g.client}">${ic('plus', 22, 2.2)}</button></header>
+  ${offlineBar()}
+  <label class="search" data-guide="clientes">${ic('search', 20)}<input id="q-clients" type="search" placeholder="Buscar por nombre o teléfono" value="${esc(S.clientsQ)}" autocomplete="off" aria-label="Buscar ${g.clients}"></label>
+  <div id="client-list">${clientListHTML()}</div>`;
+}
+
+/* ---------- Detalle de cliente ---------- */
+function renderClient(id) {
+  const g = G(), c = cli(id), d = S.data;
+  if (id === 'c0') S.flags.t2 = true;
+  const recs = d.records[id] || [];
+  const tab = S.clientTab;
+  const appts = d.appts.filter(a => a.clientId === id && a.status !== 'cancelled').sort((a, b) => b.day - a.day || b.start - a.start);
+  const sales = d.sales.filter(v => v.clientId === id).sort((a, b) => b.day - a.day);
+  let body = '';
+  if (tab === 'record') {
+    let extra = '';
+    if (g.plan && g.plan.client === +id.slice(1)) {
+      const p = g.plan; const pct = Math.round(p.paid / p.total * 100);
+      extra += `<div class="card plan"><div class="entry-h"><b>Plan de tratamiento</b><span class="chip due">Saldo ${money(p.total - p.paid)}</span></div><span style="font-size:14px">${esc(p.name)}</span><div class="bar"><i style="width:${pct}%"></i></div><div class="kv"><span>Pagado <b class="tnum">${money(p.paid)}</b></span><span>Total <b class="tnum">${money(p.total)}</b></span></div></div>`;
+    }
+    if (g.weights && id === 'c0') extra += weightCard(g.weights);
+    if (g.prefs && g.prefs.client === +id.slice(1)) {
+      extra += `<div class="entry"><div class="entry-h"><b>Preferencias</b><small>Siempre visible</small></div><dl>${g.prefs.items.map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl><div class="photos">${g.prefs.photos.map(a => `<div class="photo">${fmtAgo(a)}</div>`).join('')}</div></div>`;
+    }
+    body = `${extra}
+      <div class="section-h"><h2>${g.record === 'Ficha' ? 'Visitas' : 'Notas'}</h2><button data-a="newNote" data-id="${id}">+ Nueva nota</button></div>
+      ${recs.length ? recs.map((r, i) => entryHTML(r, i === 0)).join('') : `<div class="card empty">Todavía no hay notas.</div>`}`;
+  } else if (tab === 'appts') {
+    body = appts.length ? `<div class="list">${appts.map(a => `<button class="row" data-a="openAppt" data-id="${a.id}"><span class="grow"><span class="t1" style="display:block">${fmtDay(a.day)} · ${fmtTime(a.start)}</span><span class="t2" style="display:block">${esc(svc(a.serviceId).name)}</span></span>${statusChip(a)}</button>`).join('')}</div>` : `<div class="card empty">Sin citas.</div>`;
+  } else {
+    body = sales.length ? `<div class="list">${sales.map(v => `<div class="row"><span class="grow"><span class="t1" style="display:block">${v.day === 0 ? 'Hoy' : fmtAgo(-v.day)}</span><span class="t2" style="display:block">${esc(v.lines.map(l => l.name).join(', '))} · ${v.payments.map(p => METHODS[p.method][0]).join(' + ')}</span></span><b class="tnum">${money(v.total)}</b></div>`).join('')}</div>` : `<div class="card empty">Sin pagos registrados.</div>`;
+  }
+  return `
+  <div class="top" style="align-items:center"><button class="iconbtn" data-a="back" aria-label="Regresar">${ic('back', 22, 2)}</button>${syncHTML()}</div>
+  ${offlineBar()}
+  <section class="client-head">
+    <span class="avatar lg">${initials(c.name)}</span>
+    <div><h1>${esc(c.name)}</h1><p class="sub">${esc(c.phone)}${c.age ? ' · ' + c.age + ' años' : ''}</p></div>
+    <div class="quick">
+      <button data-a="newAppt" data-client="${id}">${ic('cal', 22)}Agendar</button>
+      <button data-a="cobrarCliente" data-id="${id}">${ic('cash', 22)}Cobrar</button>
+      <button data-a="toast" data-msg="En la app real se abre WhatsApp con ${esc(c.name.split(' ')[0])}.">${ic('chat', 22)}WhatsApp</button>
+      ${g.doc ? `<button data-a="doc" data-id="${id}">${ic('doc', 22)}${g.doc.label}</button>` : `<button data-a="newNote" data-id="${id}">${ic('note', 22)}Nota</button>`}
+    </div>
+  </section>
+  <div class="tabs" role="tablist">
+    <button role="tab" aria-selected="${tab === 'record'}" data-a="clientTab" data-v="record">${g.record}</button>
+    <button role="tab" aria-selected="${tab === 'appts'}" data-a="clientTab" data-v="appts">Citas</button>
+    <button role="tab" aria-selected="${tab === 'sales'}" data-a="clientTab" data-v="sales">Pagos</button>
+  </div>
+  ${body}`;
+}
+function entryHTML(r, latest) {
+  const open = S.openEntries[r.id] || false;
+  const guide = latest ? ' data-guide="cliente"' : '';
+  const when = r.ago === 0 ? 'Hoy' : fmtAgo(r.ago);
+  return `<button class="entry ${latest ? 'latest' : ''}" data-a="toggleEntry" data-id="${r.id}" aria-expanded="${open}"${guide}>
+    <span class="entry-h"><b>${esc(r.title)}</b><small style="white-space:nowrap">${when}</small></span>
+    ${latest || r.private ? `<span class="chips">${latest ? '<span class="chip recent">Más reciente</span>' : ''}${r.private ? `<span class="chip neutral">${ic('lock', 14, 2)}Privada · solo tú la ves</span>` : ''}</span>` : ''}
+    ${open ? `<dl>${r.body.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl><small style="color:var(--text-2)">Por ${esc(r.author)}</small>` : `<span class="preview">${esc(r.body.map(b => b[1]).join(' '))}</span>`}
+  </button>`;
+}
+function weightCard(ws) {
+  const W = 300, H = 90, P = 18;
+  const vals = ws.map(w => w[1]); const min = Math.min(...vals) - .5, max = Math.max(...vals) + .5;
+  const pts = ws.map((w, i) => [P + i * (W - 2 * P) / (ws.length - 1), P + (max - w[1]) / (max - min) * (H - 2 * P)]);
+  const path = pts.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' ');
+  const last = pts.at(-1);
+  return `<div class="card plan"><div class="entry-h"><b>Peso</b><span class="chip ok">−${(vals[0] - vals.at(-1)).toFixed(1)} kg en 4 meses</span></div>
+  <svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Peso de ${vals[0]} a ${vals.at(-1)} kilos">
+    ${[0, 1, 2].map(i => `<line x1="${P}" x2="${W - P}" y1="${P + i * (H - 2 * P) / 2}" y2="${P + i * (H - 2 * P) / 2}" stroke="#e6e8f0" stroke-width="1"/>`).join('')}
+    <path d="${path} L ${last[0]} ${H - P} L ${P} ${H - P} Z" fill="var(--accent-soft)"/>
+    <path d="${path}" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"/>
+    <circle cx="${last[0]}" cy="${last[1]}" r="4.5" fill="var(--accent)" stroke="#fff" stroke-width="2"/>
+    <text x="${last[0] - 6}" y="${last[1] - 9}" text-anchor="end" font-size="12" font-weight="700" fill="#003c70">${vals.at(-1)} kg</text>
+    <text x="${P}" y="${pts[0][1] - 8}" font-size="11" fill="#626a80">${vals[0]} kg</text>
+  </svg></div>`;
+}
+
+/* ---------- Cobrar ---------- */
+function cartTotal() { return S.cart ? S.cart.lines.reduce((a, l) => a + l.price * l.qty, 0) : 0; }
+function itemsGridHTML() {
+  const q = S.cobrarQ.trim().toLowerCase();
+  const hasProducts = S.data.items.some(i => i.type === 'product');
+  const type = hasProducts ? S.catTab : 'service';
+  const list = S.data.items.filter(i => (q ? true : i.type === type) && (!q || i.name.toLowerCase().includes(q)));
+  const qtyOf = id => (S.cart?.lines.find(l => l.itemId === id) || {}).qty || 0;
+  return `<div class="grid" data-guide="cobrar">${list.map(i => {
+    const q2 = qtyOf(i.id);
+    return `<button class="item ${q2 ? 'in' : ''}" data-a="addItem" data-id="${i.id}" aria-label="Agregar ${esc(i.name)}, ${money(i.price)}">${q2 ? `<span class="q">${q2}</span>` : ''}<b>${esc(i.name)}</b><span class="tnum">${money(i.price)}${i.dur ? ` <small>· ${i.dur} min</small>` : ''}</span></button>`;
+  }).join('')}<button class="item free-item" data-a="freeItem"><b>${ic('plus', 18, 2)} Cobro libre</b><small>Escribe nombre y precio</small></button></div>
+  ${!list.length && q ? `<div class="empty">No hay nada que se llame “${esc(S.cobrarQ)}”. Usa Cobro libre.</div>` : ''}`;
+}
+function renderCobrar() {
+  const g = G(), d = S.data;
+  const pending = d.appts.filter(a => a.day === 0 && a.status === 'completed' && !a.paid);
+  const hasProducts = d.items.some(i => i.type === 'product');
+  const cc = S.cart?.clientId ? cli(S.cart.clientId) : null;
+  return `
+  <header class="top"><div class="lt"><p class="eyebrow">Registra lo que te pagaron</p><h1 class="title">Cobrar</h1></div>${S.cart && S.cart.lines.length ? `<button class="btn btn-ghost btn-sm" data-a="clearCart" style="margin-top:18px">Vaciar</button>` : ''}</header>
+  ${offlineBar()}
+  ${pending.length ? `<section class="section"><div class="section-h"><h2>Por cobrar de hoy</h2></div><div class="list">${pending.map(a => `<button class="row" data-a="cobrarAppt" data-id="${a.id}"><span class="avatar soft">${initials(cli(a.clientId).name)}</span><span class="grow"><span class="t1" style="display:block">${esc(cli(a.clientId).name)}</span><span class="t2" style="display:block">${esc(svc(a.serviceId).name)} · ${fmtTime(a.start)}</span></span><b class="tnum">${money(svc(a.serviceId).price)}</b></button>`).join('')}</div></section>` : ''}
+  <button class="client-chip" data-a="pickClient">${ic('users', 20)}<span class="grow">${cc ? `${g.Client}: ${esc(cc.name)}` : `Asignar ${g.client} (opcional)`}</span>${cc ? `<span class="x" data-a="unpickClient" aria-label="Quitar ${g.client}">${ic('x', 16, 2)}</span>` : ic('right', 18)}</button>
+  <label class="search">${ic('search', 20)}<input id="q-items" type="search" placeholder="Buscar servicio o producto" value="${esc(S.cobrarQ)}" autocomplete="off" aria-label="Buscar servicio o producto"></label>
+  ${hasProducts ? `<div class="tabs" role="tablist"><button role="tab" aria-selected="${S.catTab === 'service'}" data-a="catTab" data-v="service">Servicios</button><button role="tab" aria-selected="${S.catTab === 'product'}" data-a="catTab" data-v="product">Productos</button></div>` : ''}
+  <div id="items-grid">${itemsGridHTML()}</div>`;
+}
+
+/* ---------- Vista pública ---------- */
+function slotsFor(day, dur) {
+  const busy = S.data.appts.filter(a => a.day === day && a.status !== 'cancelled').map(a => [a.start, a.start + svc(a.serviceId).dur]);
+  const out = [];
+  for (let t = 9 * 60; t + dur <= 20 * 60; t += 30) {
+    const taken = busy.some(([s, e]) => t < e && t + dur > s);
+    const past = day === 0 && t <= new Date().getHours() * 60 + new Date().getMinutes();
+    out.push({ t, ok: !taken && !past });
+  }
+  return out;
+}
+function renderPublic() {
+  const g = G(), p = S.pub;
+  const pname = g.pro;
+  if (p.step === 'profile') {
+    const svcs = S.data.items.filter(i => i.type === 'service');
+    return `<div class="urlbar">${ic('lock', 14, 2)}catmin.mx/${g.slug}</div>
+    <div class="cover"><span class="cover-hint">Aquí va la foto de tu ${g.cedula ? 'consultorio' : 'negocio'}</span></div>
+    <div class="pub-sheet">
+      <div class="pub-title"><h1>${esc(g.biz)}</h1><p>${esc(g.cedula ? g.title : g.title + 's')} · ${esc(g.area)}</p></div>
+      <div class="highlights">
+        <div>${ic(g.cedula ? 'shield' : 'cal', 22)}<span>${g.cedula ? 'Cédula verificada' : 'Reserva en línea'}</span></div>
+        <div>${ic('chat', 22)}<span>Recordatorio por WhatsApp</span></div>
+        <div>${ic('card', 22)}<span>Efectivo, tarjeta o transferencia</span></div>
+      </div>
+      <div class="host"><span class="avatar">${initials(proName(g))}</span><div style="min-width:0"><b style="display:block">Te atiende ${esc(g.pro)}</b><span class="sub" style="display:block;margin:0">${esc(g.title)}${g.cedula ? ' · Cédula ' + g.cedula : ''}</span></div></div>
+      <p class="bio">${esc(g.bio)}</p>
+      <section class="pub-sec"><h2>Servicios</h2><div>${svcs.map(i => `<button class="svc-row" data-a="pubPick" data-id="${i.id}"><span class="grow"><b style="display:block">${esc(i.name)}</b><span class="sub" style="display:block;margin:0">${i.dur} min</span></span><b class="tnum">${money(i.price)}</b>${chev()}</button>`).join('')}</div></section>
+      <section class="pub-sec"><h2>Horario</h2><div class="info-row">${ic('clock', 22)}<span>${esc(g.hours)}</span></div></section>
+      <section class="pub-sec"><h2>Ubicación</h2><div class="info-row">${ic('pin', 22)}<span>${esc(g.address)}</span></div></section>
+      <p class="powered">Agenda con Catmin</p>
+    </div>`;
+  }
+  const stepH = (n, t) => `<div class="urlbar">${ic('lock', 14, 2)}catmin.mx/${g.slug}</div><div class="step-h"><button class="iconbtn" data-a="pubBack" aria-label="Regresar">${ic('back', 22, 2)}</button><div><small>Paso ${n} de 3</small><h1>${t}</h1></div></div>`;
+  const svcItem = p.serviceId ? svc(p.serviceId) : null;
+  if (p.step === 'service') {
+    return `${stepH(1, 'Elige el servicio')}<div class="pub-body"><div class="opts" style="flex-direction:column">${S.data.items.filter(i => i.type === 'service').map(i => `<button class="opt" style="width:100%;min-height:60px" data-a="pubPick" data-id="${i.id}" aria-pressed="${p.serviceId === i.id}"><span style="display:flex;justify-content:space-between;gap:8px;width:100%"><span>${esc(i.name)}</span><span class="tnum">${money(i.price)}</span></span><small>${i.dur} min</small></button>`).join('')}</div></div>`;
+  }
+  if (p.step === 'time') {
+    const days = Array.from({ length: 10 }, (_, i) => i);
+    const slots = slotsFor(p.day, svcItem.dur);
+    return `${stepH(2, 'Elige día y hora')}<div class="pub-body">
+      <div class="summary"><span>${esc(svcItem.name)} · ${svcItem.dur} min</span><b>${esc(g.cedula ? pname : g.biz)}</b></div>
+      <div class="week">${days.map(i => { const x = dateOf(i); return `<button class="day${i === 0 ? ' today' : ''}" data-a="pubDay" data-v="${i}" aria-pressed="${p.day === i}"><small>${i === 0 ? 'Hoy' : WDS[x.getDay()]}</small><b class="tnum">${x.getDate()}</b><i style="visibility:hidden"></i></button>`; }).join('')}</div>
+      <div class="field"><span class="label">${fmtDay(p.day, true)}</span><div class="times">${slots.map(s => `<button class="opt tnum" data-a="pubTime" data-v="${s.t}" aria-pressed="${p.time === s.t}" ${s.ok ? '' : 'disabled'}>${fmtTimeShort(s.t)}</button>`).join('')}</div></div>
+    </div>`;
+  }
+  if (p.step === 'data') {
+    const phoneOk = p.phone.replace(/\D/g, '').length === 10;
+    return `${stepH(3, 'Tus datos')}<div class="pub-body">
+      <div class="summary"><b>${esc(svcItem.name)}</b><span>${cap(fmtDay(p.day, true))} · ${fmtTime(p.time)}</span><span>${esc(g.cedula ? pname : g.biz)}</span></div>
+      <div class="field"><label for="pub-name">Nombre completo</label><input class="input" id="pub-name" value="${esc(p.name)}" autocomplete="name" placeholder="Como aparece en tu identificación"></div>
+      <div class="field"><label for="pub-phone">Tu WhatsApp</label><input class="input ${p.phoneTouched && !phoneOk ? 'err' : ''}" id="pub-phone" value="${esc(p.phone)}" inputmode="tel" autocomplete="tel" placeholder="10 dígitos"><span class="err-msg" id="pub-phone-err" ${p.phoneTouched && !phoneOk ? '' : 'hidden'}>Escribe los 10 dígitos de tu celular.</span></div>
+      <button class="check" data-a="pubConsent" role="checkbox" aria-checked="${p.consent}"><span class="box">${p.consent ? ic('check', 16, 3) : ''}</span><span>Acepto recibir mensajes por WhatsApp sobre mi cita y el aviso de privacidad de ${esc(g.biz)}.</span></button>
+    </div>`;
+  }
+  if (p.step === 'wa' || p.step === 'waSent') {
+    const msg = `Confirmo mi cita ${p.code}`;
+    return `<div class="chat" style="min-height:100%"><div class="sim">Simulación: así se abre WhatsApp en tu celular</div>
+      <div class="chat-h"><span class="avatar" style="width:40px;height:40px;font-size:13px">Ct</span><div><b>Catmin</b><small>Cuenta de empresa</small></div></div>
+      <div class="chat-b">${p.step === 'waSent' ? `<div class="bub me">${msg}<small>${fmtTime(new Date().getHours() * 60 + new Date().getMinutes())} ✓✓</small></div><div class="bub them">¡Listo, ${esc(p.name.split(' ')[0] || '')}! Tu cita en ${esc(g.biz)} quedó confirmada: ${fmtDay(p.day, true).toLowerCase()}, ${fmtTime(p.time)} Te recordaremos un día antes.<small>ahora</small></div><button class="btn btn-primary" style="align-self:center;margin-top:8px" data-a="pubDone">Volver a la página</button>` : ''}</div>
+      ${p.step === 'wa' ? `<div class="chat-in"><div>${msg}</div><button data-a="pubSend" aria-label="Enviar mensaje">${ic('send', 22, 2)}</button></div>` : ''}
+    </div>`;
+  }
+  if (p.step === 'done') {
+    return `<div class="urlbar">${ic('lock', 14, 2)}catmin.mx/${g.slug}</div><div class="pub-done">
+      <h1>¡Tu cita está confirmada!</h1>
+      <div class="confirm-card"><div class="confirm-photo"></div>
+        <div><b style="display:block;font-size:18px">${esc(g.biz)}</b><span class="sub" style="display:block;margin:2px 0 0">${esc(svcItem.name)} con ${esc(g.pro)}</span></div>
+        <div class="kv"><span>Fecha</span><b>${cap(fmtDay(p.day, true))}</b></div>
+        <div class="kv"><span>Hora</span><b>${fmtTime(p.time)}</b></div>
+        <div class="kv"><span>Dirección</span><b style="text-align:right;max-width:62%">${esc(g.address)}</b></div>
+        <div class="kv"><span>Precio</span><b class="tnum">${money(svcItem.price)}</b></div>
+      </div>
+      <p class="sub" style="text-align:center;font-size:15px;margin:0">Te recordaremos por WhatsApp un día antes. Si necesitas cambiarla, respóndenos por ahí.</p>
+    </div>`;
+  }
+  return '';
+}
+function pubSticky() {
+  const p = S.pub; if (!p) return '';
+  if (p.step === 'profile') {
+    const min = S.data.items.filter(i => i.type === 'service').reduce((a, i) => Math.min(a, i.price), Infinity);
+    return `<div class="pub-sticky booking"><div class="price"><b class="tnum">Desde ${money(min)}</b><span>Reserva en línea, sin llamar</span></div><button class="btn btn-accent" data-a="pubStart">Reservar</button></div>`;
+  }
+  if (p.step === 'service') return `<div class="pub-sticky"><button class="btn btn-primary btn-block" data-a="pubNext" ${p.serviceId ? '' : 'disabled'}>Continuar</button></div>`;
+  if (p.step === 'time') return `<div class="pub-sticky"><button class="btn btn-primary btn-block" data-a="pubNext" ${p.time != null ? '' : 'disabled'}>Continuar</button></div>`;
+  if (p.step === 'data') {
+    const ok = p.name.trim().length > 2 && p.phone.replace(/\D/g, '').length === 10 && p.consent;
+    return `<div class="pub-sticky"><button class="btn btn-primary btn-block" id="pub-wa" data-a="pubWa" ${ok ? '' : 'disabled'}>${ic('chat', 20)}Confirmar por WhatsApp</button><p style="margin:8px 0 0;text-align:center;font-size:13px;color:var(--text-2)">Se abre WhatsApp con un mensaje listo. Solo tócale enviar.</p></div>`;
+  }
+  if (p.step === 'done') return `<div class="pub-sticky clear"><button class="btn btn-primary btn-block" data-a="pubRestart">Listo</button></div>`;
+  return '';
+}
+/* ---------- hojas ---------- */
+const SHEETS = {
+  quick() {
+    const g = G();
+    return { title: 'Crear', body: `<div class="list inset-ico" style="box-shadow:none;border:1px solid var(--hairline)">
+      <button class="row" data-a="newAppt"><span class="ico">${ic('cal', 18, 2)}</span><span class="grow"><span class="t1">Nueva cita</span><span class="t2">Agenda a un ${g.client}</span></span>${chev()}</button>
+      <button class="row" data-a="tab" data-v="cobrar"><span class="ico" style="--c:var(--success)">${ic('cash', 18, 2)}</span><span class="grow"><span class="t1">Cobrar</span><span class="t2">Registra lo que te pagaron</span></span>${chev()}</button>
+      <button class="row" data-a="toast" data-msg="En la app real aquí agregas a un ${g.client} nuevo."><span class="ico" style="--c:var(--orange)">${ic('users', 18, 2)}</span><span class="grow"><span class="t1">${g.Client} nuevo</span><span class="t2">Guarda sus datos de contacto</span></span>${chev()}</button>
+    </div>` };
+  },
+  appt() {
+    const a = S.data.appts.find(x => x.id === S.sheet.id); const c = cli(a.clientId), sv = svc(a.serviceId), g = G();
+    if (a.source === 'web') a.seen = true;
+    const main = a.status === 'pending' ? `<button class="btn btn-primary btn-block" data-a="confirmAppt" data-id="${a.id}" data-guide="appt" ${S.offline ? 'disabled' : ''}>${ic('check', 20, 2.2)}Confirmar cita</button>`
+      : a.status === 'completed' && !a.paid ? `<button class="btn btn-primary btn-block" data-a="cobrarAppt" data-id="${a.id}" data-guide="appt">${ic('cash', 20)}Cobrar ${money(sv.price)}</button>`
+      : a.status === 'confirmed' ? `<button class="btn btn-primary btn-block" data-a="attendAppt" data-id="${a.id}" data-guide="appt" ${S.offline ? 'disabled' : ''}>${ic('check', 20, 2.2)}Marcar como atendida</button>` : '';
+    return {
+      title: c.name,
+      body: `<div class="summary"><b>${esc(sv.name)}</b><span>${cap(fmtDay(a.day, true))} · ${fmtTime(a.start)} – ${fmtTime(a.start + sv.dur)}</span><span style="display:flex;gap:6px;margin-top:6px">${statusChip(a)}${a.source === 'web' ? '<span class="chip info">Reservó en línea</span>' : ''}</span></div>
+        <div class="menu-list">
+          <button data-a="openClient" data-id="${c.id}">${ic(g.record === 'Ficha' ? 'note' : 'doc', 22)}<span class="grow">Abrir ${g.record.toLowerCase()}</span>${chev()}</button>
+          <button data-a="toast" data-msg="En la app real se abre WhatsApp con ${esc(c.name.split(' ')[0])}.">${ic('chat', 22)}<span class="grow">Escribir por WhatsApp</span>${chev()}</button>
+          ${a.status !== 'completed' ? `<button data-a="toast" data-msg="Reprogramar no está en este prototipo.">${ic('cal', 22)}<span class="grow">Cambiar día u hora</span>${chev()}</button>
+          <button data-a="cancelAppt" data-id="${a.id}" style="color:var(--danger-text)" ${S.offline ? 'disabled' : ''}>${ic('x', 22)}<span class="grow">Cancelar cita</span></button>` : ''}
+        </div>${S.offline ? '<p class="sub" style="text-align:center">Sin conexión: puedes ver la cita, pero no cambiarla.</p>' : ''}`,
+      footer: main
+    };
+  },
+  na() {
+    const n = S.sheet, g = G(), d = S.data;
+    const c = n.clientId ? cli(n.clientId) : null; const sv = n.serviceId ? svc(n.serviceId) : null;
+    const newOk = n.newMode && n.newName.trim().length > 2 && n.newPhone.replace(/\D/g, '').length === 10;
+    const hasClient = !!c || newOk;
+    let clientHTML;
+    if (c) clientHTML = `<div class="picked"><span class="avatar soft">${initials(c.name)}</span><span class="grow"><b style="display:block">${esc(c.name)}</b><span class="sub">${esc(c.phone)}</span></span><button data-a="naClient" data-id="">Cambiar</button></div>`;
+    else if (n.newMode) clientHTML = `<div class="field"><input class="input" id="na-new-name" placeholder="Nombre completo" value="${esc(n.newName)}" autocomplete="off"></div><div class="field"><input class="input" id="na-new-phone" placeholder="WhatsApp (10 dígitos)" inputmode="tel" value="${esc(n.newPhone)}" autocomplete="off"></div><button class="linkbtn" style="align-self:flex-start" data-a="naNewMode" data-v="0">Buscar ${g.client} existente</button>`;
+    else clientHTML = `<label class="search">${ic('search', 20)}<input id="na-q" type="search" placeholder="Escribe el nombre" value="${esc(n.q)}" autocomplete="off" aria-label="Buscar ${g.client}"></label><div id="na-results">${naResultsHTML()}</div>`;
+    const slots = sv ? slotsFor(n.day, sv.dur) : [];
+    const days = Array.from({ length: 10 }, (_, i) => i);
+    return {
+      title: 'Nueva cita',
+      body: `
+      <div class="field" data-step="client"><span class="label">${g.Client}</span>${clientHTML}</div>
+      <div class="field" data-step="service"><span class="label">Servicio</span><div class="opts">${d.items.filter(i => i.type === 'service').map(i => `<button class="opt" data-a="naService" data-id="${i.id}" aria-pressed="${n.serviceId === i.id}">${esc(i.name)}<small>${i.dur} min · ${money(i.price)}</small></button>`).join('')}</div></div>
+      <div class="field" data-step="day"><span class="label">Día</span><div class="week">${days.map(i => { const x = dateOf(i); return `<button class="day${i === 0 ? ' today' : ''}" data-a="naDay" data-v="${i}" aria-pressed="${n.day === i}"><small>${i === 0 ? 'Hoy' : i === 1 ? 'Mañ' : WDS[x.getDay()]}</small><b class="tnum">${x.getDate()}</b><i style="visibility:hidden"></i></button>`; }).join('')}</div></div>
+      <div class="field" data-step="time"><span class="label">Hora · ${fmtDay(n.day, true)}</span>${sv ? `<div class="times">${slots.map(s => `<button class="opt tnum" data-a="naTime" data-v="${s.t}" aria-pressed="${n.time === s.t}" ${s.ok ? '' : 'disabled'}>${fmtTimeShort(s.t)}</button>`).join('')}</div>` : `<p class="sub" style="margin:0">Elige primero el servicio para ver los horarios libres.</p>`}</div>`,
+      footer: naFooter(hasClient, sv)
+    };
+  },
+  naDone() {
+    const a = S.data.appts.find(x => x.id === S.sheet.id); const c = cli(a.clientId);
+    return { title: '', noClose: true, body: `<div class="done-box"><span class="badge">${ic('check', 40, 2.6)}</span><h3>Cita agendada</h3><p>${esc(c.name)} · ${esc(svc(a.serviceId).name)}<br>${cap(fmtDay(a.day, true))}, ${fmtTime(a.start)}</p><p>Le llegará un recordatorio por WhatsApp un día antes.</p></div>`, footer: `<button class="btn btn-primary btn-block" data-a="sheetClose">Listo</button>` };
+  },
+  pickClient() {
+    const g = G();
+    return { title: `Asignar ${g.client}`, body: `<div class="list" style="box-shadow:none;border:1.5px solid var(--border)">${S.data.clients.slice().sort((a, b) => a.name.localeCompare(b.name)).map(c => `<button class="row" data-a="setCartClient" data-id="${c.id}"><span class="avatar soft">${initials(c.name)}</span><span class="grow"><span class="t1" style="display:block">${esc(c.name)}</span><span class="t2" style="display:block">${esc(c.phone)}</span></span></button>`).join('')}</div>` };
+  },
+  free() {
+    return { title: 'Cobro libre', body: `<div class="field"><label for="free-name">¿Qué vas a cobrar?</label><input class="input" id="free-name" placeholder="Ej. Ajuste de brackets" autocomplete="off"></div><div class="field"><label for="free-price">Precio</label><input class="input" id="free-price" inputmode="decimal" placeholder="$0" autocomplete="off"></div>`, footer: `<button class="btn btn-primary btn-block" data-a="freeSave">Agregar</button>` };
+  },
+  pay() {
+    const total = cartTotal(), lines = S.cart.lines, pays = S.sheet.pays;
+    return {
+      title: 'Forma de pago',
+      body: `<div class="paytotal"><small>Total a cobrar</small><b class="tnum">${money(total)}</b></div>
+      <div class="lines">${lines.map(l => `<div class="row"><span class="grow"><span class="t1" style="display:block">${esc(l.name)}</span><span class="t2 tnum" style="display:block">${money(l.price)} c/u</span></span><span class="qty"><button data-a="qty" data-k="${l.key}" data-v="-1" aria-label="Quitar uno">${ic('minus', 16, 2.4)}</button><b class="tnum">${l.qty}</b><button data-a="qty" data-k="${l.key}" data-v="1" aria-label="Agregar uno">${ic('plus', 16, 2.4)}</button></span></div>`).join('')}</div>
+      ${pays.length ? `<div class="paylines">${pays.map((p, i) => `<div class="payline"><div class="r">${ic(METHODS[p.method][1], 22)}<b>${METHODS[p.method][0]}</b><label class="money"><span>$</span><input id="pay-${i}" data-pay="${i}" inputmode="decimal" value="${p.amount ? p.amount : ''}" aria-label="Monto en ${METHODS[p.method][0]}" autocomplete="off"></label><button class="iconbtn" style="width:36px;height:36px;box-shadow:none;background:var(--surface-2)" data-a="payRemove" data-v="${i}" aria-label="Quitar ${METHODS[p.method][0]}">${ic('x', 16, 2)}</button></div>${p.method === 'cash' ? `<div class="r" style="font-size:14px;color:var(--text-2)"><span style="flex:1">¿Con cuánto te pagaron?</span><label class="money"><span>$</span><input id="pay-rec" data-rec="${i}" inputmode="decimal" value="${p.received || ''}" aria-label="Efectivo recibido" autocomplete="off"></label></div><div class="sub" id="change-${i}" style="text-align:right;font-weight:700;color:var(--text)">${changeText(p)}</div>` : ''}</div>`).join('')}</div>` : ''}
+      <div class="field"><span class="label">${pays.length ? 'Agregar otra forma de pago' : '¿Cómo te pagaron?'}</span><div class="methods" data-guide="pay">${Object.keys(METHODS).filter(m => !pays.some(p => p.method === m)).map(m => `<button class="method" data-a="payAdd" data-v="${m}">${ic(METHODS[m][1], 22)}${METHODS[m][0]}</button>`).join('')}</div></div>`,
+      footer: `<div id="pay-state">${payStateHTML()}</div>`
+    };
+  },
+  processing() { return { title: '', noClose: true, body: `<div class="done-box" style="padding:24px 0"><span class="spinner" role="status" aria-label="Guardando"></span><h3>Registrando cobro…</h3></div>` }; },
+  paid() {
+    const v = S.data.sales.find(x => x.id === S.sheet.id);
+    return { title: '', noClose: true, body: `<div class="done-box"><span class="badge">${ic('check', 40, 2.6)}</span><h3>Cobro registrado</h3><p class="tnum" style="font-size:28px;font-weight:800;color:var(--text)">${money(v.total)}</p><p>${v.payments.map(p => `${METHODS[p.method][0]} ${money(p.amount)}`).join(' · ')}</p></div>`, footer: `<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><button class="btn btn-line" data-a="ticket" data-id="${v.id}">${ic('print', 20)}Ticket</button><button class="btn btn-line" data-a="toast" data-msg="En la app real el ticket se envía por WhatsApp.">${ic('chat', 20)}WhatsApp</button></div><button class="btn btn-primary btn-block" data-a="sheetClose">Listo</button>` };
+  },
+  ticket() {
+    const v = S.data.sales.find(x => x.id === S.sheet.id), g = G(), c = v.clientId ? cli(v.clientId) : null;
+    const now = new Date();
+    return { title: 'Ticket', body: `<div class="ticket tnum"><div class="c"><b>${esc(g.biz.toUpperCase())}</b><br>${esc(g.address)}</div><hr><div>${now.toLocaleDateString('es-MX')} ${fmtTime(now.getHours() * 60 + now.getMinutes())}</div>${c ? `<div>${G().Client}: ${esc(c.name)}</div>` : ''}<hr>${v.lines.map(l => `<div class="l"><span>${l.qty} ${esc(l.name)}</span><span>${money(l.price * l.qty)}</span></div>`).join('')}<hr><div class="l"><b>TOTAL</b><b>${money(v.total)}</b></div>${v.payments.map(p => `<div class="l"><span>${METHODS[p.method][0]}</span><span>${money(p.amount)}</span></div>`).join('')}<hr><div class="c">Comprobante de venta<br>no es factura<br><br>¡Gracias por tu visita!</div></div>`, footer: `<button class="btn btn-primary btn-block" data-a="toast" data-msg="En la app real se envía a tu impresora (Bluetooth o la de tu PC).">${ic('print', 20)}Imprimir</button>` };
+  },
+  note() {
+    const g = G(), c = cli(S.sheet.id);
+    return { title: g.note.name, body: `<p class="sub" style="margin:0">${esc(c.name)} · ${cap(fmtDay(0, true))}</p>${g.note.fields.map(([l, t], i) => `<div class="field"><label for="nf-${i}">${esc(l)}</label>${t === 'area' ? `<textarea class="input" id="nf-${i}" rows="3"></textarea>` : `<input class="input" id="nf-${i}" ${t === 'num' ? 'inputmode="decimal"' : ''} autocomplete="off">`}</div>`).join('')}${g.note.private ? `<div class="chip neutral" style="align-self:flex-start">${ic('lock', 14, 2)}Privada: solo tú la verás</div>` : ''}`, footer: `<button class="btn btn-primary btn-block" data-a="noteSave" ${S.offline ? 'disabled' : ''}>${S.offline ? 'Sin conexión para guardar' : 'Guardar nota'}</button>` };
+  },
+  doc() {
+    const g = G(), c = cli(S.sheet.id); const recs = S.data.records[c.id] || [];
+    const src = recs.find(r => r.body.some(b => b[0] === g.doc.field || (g.doc.field === 'Indicaciones' && b[0] === 'Indicaciones')));
+    const txt = src ? (src.body.find(b => b[0] === g.doc.field) || src.body.at(-1))[1] : 'Escribe aquí las indicaciones.';
+    return { title: g.doc.title, body: `<div class="page"><header><div><b>${esc(g.pro)}</b><small>${esc(g.title)}${g.cedula ? ' · Cédula profesional ' + g.cedula : ''}</small><small>${esc(g.address)}</small></div><small style="text-align:right">${new Date().toLocaleDateString('es-MX')}</small></header><div><small style="color:var(--text-2)">${G().Client}</small><b style="display:block">${esc(c.name)}${c.age ? ' · ' + c.age + ' años' : ''}</b></div><div class="rx"><b>${esc(g.doc.title)}</b><span>${esc(txt)}</span></div><div class="sign">Firma</div></div><p class="sub" style="margin:0;text-align:center">Vista previa en tamaño carta. Puedes editar el texto antes de imprimir.</p>`, footer: `<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><button class="btn btn-line" data-a="toast" data-msg="En la app real el PDF se envía por WhatsApp.">${ic('chat', 20)}WhatsApp</button><button class="btn btn-primary" data-a="toast" data-msg="En la app real se abre la impresión.">${ic('print', 20)}Imprimir</button></div>` };
+  },
+  perfil() {
+    const g = G();
+    return { title: 'Tu perfil', body: `
+      <div class="picked" style="background:transparent;padding:0"><span class="avatar lg">${initials(proName(g))}</span><span class="grow"><b style="display:block;font-size:18px">${esc(g.pro)}</b><span class="sub">${esc(g.biz)} · Dueño</span></span></div>
+      <div class="field"><span class="label">Tu gato</span><div class="swatches">${Object.entries(CATS).map(([k, c]) => `<button class="swatch" data-a="setCat" data-v="${k}" aria-pressed="${S.cat === k}" aria-label="Gato ${c.name}">${catSVG('sit', c)}</button>`).join('')}</div></div>
+      <div class="menu-list">
+        <button data-a="viewPublic">${ic('globe', 22)}<span class="grow">Mi perfil público</span>${chev()}</button>
+        <button data-a="toast" data-msg="Equipo no está en este prototipo.">${ic('team', 22)}<span class="grow">Equipo y permisos</span>${chev()}</button>
+        <button data-a="toast" data-msg="Configuración no está en este prototipo.">${ic('gear', 22)}<span class="grow">Configuración</span>${chev()}</button>
+      </div>
+      <div class="proto"><h3>Prototipo · solo para la prueba</h3>${protoControls(true)}</div>` };
+  },
+  tasks() {
+    return { title: 'Tareas de la prueba', body: tasksHTML() };
+  }
+};
+function naResultsHTML() {
+  const n = S.sheet, g = G();
+  const q = n.q.trim().toLowerCase();
+  const list = S.data.clients.filter(c => !q || c.name.toLowerCase().includes(q)).sort((a, b) => a.name.localeCompare(b.name)).slice(0, q ? 6 : 4);
+  return `<div class="results" style="margin-top:8px">${list.map(c => `<button data-a="naClient" data-id="${c.id}"><span class="avatar soft" style="width:36px;height:36px;font-size:13px">${initials(c.name)}</span><span style="flex:1">${esc(c.name)}</span></button>`).join('')}<button data-a="naNewMode" data-v="1" style="color:var(--text);font-weight:700">${ic('plus', 20, 2)}<span style="flex:1">${q && !list.length ? `Agregar a “${esc(n.q)}” como ${g.client} nuevo` : `${g.Client} nuevo`}</span></button></div>`;
+}
+function naFooter(hasClient, sv) {
+  const n = S.sheet;
+  const missing = !hasClient ? `Falta elegir ${G().client}` : !sv ? 'Falta elegir el servicio' : n.time == null ? 'Falta elegir la hora' : '';
+  const label = S.offline ? 'Sin conexión para guardar' : 'Agendar cita';
+  return `<div class="hint" id="na-hint">${S.offline ? 'Necesitas internet para guardar la cita.' : missing || `${cap(fmtDay(n.day, true))} · ${fmtTime(n.time)}`}</div><button class="btn btn-primary btn-block" id="na-save" data-a="naSave" data-step="save" ${missing || S.offline ? 'disabled' : ''}>${label}</button>`;
+}
+function changeText(p) {
+  const r = num(p.received);
+  if (!r) return '';
+  const ch = r - p.amount;
+  return ch >= 0 ? `Cambio: ${money(ch)}` : `Faltan ${money(-ch)} en efectivo`;
+}
+function payStateHTML() {
+  const total = cartTotal(), pays = S.sheet.pays;
+  const sum = pays.reduce((a, p) => a + (p.amount || 0), 0);
+  const diff = Math.round((total - sum) * 100) / 100;
+  let st = '';
+  if (!pays.length) st = `<div class="paystate warn">Elige cómo te pagaron</div>`;
+  else if (diff > 0) st = `<div class="paystate warn">Falta ${money(diff)}</div>`;
+  else if (diff < 0) st = `<div class="paystate bad">Te pasaste por ${money(-diff)}</div>`;
+  else st = `<div class="paystate ok">${ic('check', 16, 2.6)} Cubierto</div>`;
+  const ok = pays.length && diff === 0 && total > 0 && !S.offline;
+  return `${st}<button class="btn btn-primary btn-block" data-a="paySubmit" ${ok ? '' : 'disabled'}>${S.offline ? 'Sin conexión para guardar' : 'Cobrar ' + money(total)}</button>`;
+}
+function renderSheet() {
+  const root = $('#sheet-root');
+  if (!S.sheet) { root.innerHTML = ''; root.dataset.type = ''; return; }
+  const prevBody = root.querySelector('.sheet-body');
+  const same = root.dataset.type === S.sheet.type && root.dataset.sid === String(S.sheet.id || '');
+  const st = prevBody ? prevBody.scrollTop : 0;
+  const s = SHEETS[S.sheet.type]();
+  root.innerHTML = `<div class="overlay" ${s.noClose ? '' : 'data-a="sheetClose"'}></div><section class="sheet ${same ? '' : 'in'}" role="dialog" aria-modal="true" aria-label="${esc(s.title || 'Hoja')}"><div class="grab"></div>${s.title || !s.noClose ? `<div class="sheet-h"><h2>${esc(s.title)}</h2>${s.noClose ? '' : `<button class="iconbtn" data-a="sheetClose" aria-label="Cerrar">${ic('x', 20, 2)}</button>`}</div>` : ''}<div class="sheet-body">${s.body}</div>${s.footer ? `<div class="sheet-f">${s.footer}</div>` : ''}</section>`;
+  root.dataset.type = S.sheet.type; root.dataset.sid = String(S.sheet.id || '');
+  if (same) { const nb = root.querySelector('.sheet-body'); if (nb) nb.scrollTop = st; }
+  const sec = root.querySelector('.sheet'); if (sec) sec.addEventListener('animationend', () => placeCat(true), { once: true });
+}
+function openSheet(type, extra) { S.sheet = { type, ...extra }; hideCatPop(); render(); }
+function closeSheet() { S.sheet = null; render(); }
+
+/* ---------- panel de prueba ---------- */
+function protoControls(compact) {
+  return `
+  <div class="pgroup"><span class="label">Giro</span><div class="seg">${Object.entries(GIROS).map(([k, g]) => `<button data-a="setGiro" data-v="${k}" aria-pressed="${S.giro === k}">${g.label}</button>`).join('')}</div></div>
+  ${compact ? '' : `<div class="pgroup"><span class="label">Gato</span><div class="swatches">${Object.entries(CATS).map(([k, c]) => `<button class="swatch" data-a="setCat" data-v="${k}" aria-pressed="${S.cat === k}" aria-label="Gato ${c.name}">${catSVG('sit', c)}</button>`).join('')}</div></div>`}
+  <div class="switch-row"><span>Simular sin conexión</span><button class="switch" role="switch" aria-checked="${S.offline}" data-a="toggleOffline" aria-label="Simular sin conexión"></button></div>
+  <div class="seg"><button data-a="viewApp" aria-pressed="${S.view === 'app'}">App del negocio</button><button data-a="viewPublic" aria-pressed="${S.view === 'public'}">Ver como ${G().client}</button></div>
+  ${compact ? `<button class="btn btn-line btn-block" data-a="openTasks">Ver tareas</button>` : ''}
+  <button class="btn btn-ghost btn-block" data-a="reset">${ic('reset', 18)}Reiniciar datos y tareas</button>`;
+}
+function tasksHTML() {
+  return G().tasks.map((t, i) => {
+    const s = S.tasks[i];
+    const meta = s.done ? `<span style="color:var(--success);font-weight:700">Lograda${s.elapsed != null ? ' en ' + fmtElapsed(s.elapsed) : ''}</span>` : s.start ? `<span class="tnum" data-timer="${i}">${fmtElapsed(Date.now() - s.start)}</span><button class="linkbtn" data-a="stopTask" data-v="${i}">Detener</button>` : `<span>Sin iniciar</span><button class="linkbtn" data-a="startTask" data-v="${i}">Iniciar cronómetro</button>`;
+    return `<div class="task ${s.done ? 'done' : s.start ? 'running' : ''}"><div class="task-top"><span class="task-n">${s.done ? ic('check', 14, 3) : i + 1}</span>Tarea ${i + 1}</div><p>${esc(t)}</p><div class="task-meta">${meta}</div></div>`;
+  }).join('');
+}
+function renderPanel() {
+  const p = $('#panel');
+  if (getComputedStyle(p).display === 'none') return;
+  p.innerHTML = `
+  <div class="brand">${catSVG('sit', CATS[S.cat])}<b>Catmin</b><span class="tag">Prototipo</span></div>
+  <p>Panel para quien entrevista. La persona solo usa el teléfono. En celular, estas opciones están en Perfil → Prototipo.</p>
+  ${protoControls(false)}
+  <div class="pgroup"><h2>Tareas · lee una a la vez</h2>${tasksHTML()}</div>`;
+}
+setInterval(() => {
+  document.querySelectorAll('[data-timer]').forEach(el => { const t = S.tasks[+el.dataset.timer]; if (t && t.start && !t.done) el.textContent = fmtElapsed(Date.now() - t.start); });
+}, 1000);
+
+/* ---------- toast ---------- */
+let toastTimer;
+function toast(msg, undo) {
+  const r = $('#toast-root');
+  r.innerHTML = `<div class="toast" role="status"><span>${esc(msg)}</span>${undo ? `<button data-a="undo">Deshacer</button>` : ''}</div>`;
+  S.undo = undo || null;
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => { r.innerHTML = ''; S.undo = null; }, undo ? 5000 : 3200);
+}
+
+/* ---------- gato: comportamiento ---------- */
+const cat = { x: 24, dir: 1, state: 'sit', frame: 0, until: Date.now() + 2500, target: 0, userSleep: false, pop: null, key: '' };
+let lastAct = Date.now(), popTimer = null, hoverTimer = null, naTimer = null, payTimer = null;
+function appRect() { return $('#app').getBoundingClientRect(); }
+function catAnchor() {
+  const ar = appRect();
+  const sh = $('#sheet-root .sheet');
+  if (sh) { const r = sh.getBoundingClientRect(); return { bottom: ar.bottom - r.top - 3, fixedX: ar.width - 150 }; }
+  const nav = $('#nav');
+  if (nav && !nav.hidden) { const r = nav.getBoundingClientRect(); return { bottom: ar.bottom - r.top - 5 }; }
+  return null;
+}
+function placeCat(force) {
+  const layer = $('#cat-layer');
+  if (S.view === 'public') { layer.innerHTML = ''; cat.key = ''; return; }
+  if (!$('#cat')) { layer.innerHTML = `<div class="cat" id="cat" role="button" tabindex="0" aria-label="Gato de ayuda: toca para pedir ayuda"><span class="spr" id="cat-spr"></span></div><div id="cat-pop-root"></div>`; cat.key = ''; bindCatHover(); }
+  const a = catAnchor(); const el = $('#cat'); if (!a || !el) return;
+  el.style.bottom = a.bottom + 'px';
+  if (a.fixedX != null) { cat.x = a.fixedX; if (cat.state === 'walk') cat.state = 'sit'; }
+  const w = appRect().width; cat.x = Math.max(8, Math.min(cat.x, w - 56));
+  el.style.transform = `translateX(${cat.x}px)`;
+  drawCat(force);
+  if (cat.pop) positionPop();
+}
+function drawCat(force) {
+  const key = (cat.state === 'walk' ? 'walk' + (cat.frame + 1) : cat.state) + (cat.dir < 0 ? 'L' : 'R') + S.cat;
+  if (!force && key === cat.key) return;
+  cat.key = key;
+  const spr = $('#cat-spr'); if (!spr) return;
+  const sprite = cat.state === 'walk' ? 'walk' + (cat.frame + 1) : cat.state;
+  spr.innerHTML = catSVG(sprite, CATS[S.cat], cat.dir < 0) + (cat.state === 'sleep' ? '<span class="zz">z</span>' : '');
+}
+function catTick() {
+  if (S.view === 'public' || !$('#cat')) return;
+  const now = Date.now();
+  const busy = cat.pop || S.sheet || $('#guide-root').innerHTML;
+  if (cat.userSleep) cat.state = 'sleep';
+  else if (busy) { if (cat.state !== 'sit') cat.state = 'sit'; cat.until = now + 2000; }
+  else if (now - lastAct > 45000) cat.state = 'sleep';
+  else if (cat.state === 'sleep') { cat.state = 'sit'; cat.until = now + 1200; }
+  else if (cat.state === 'sit' && now > cat.until && !RM) {
+    const w = appRect().width; cat.target = 12 + Math.random() * (w - 80); cat.dir = cat.target > cat.x ? 1 : -1; cat.state = 'walk';
+  } else if (cat.state === 'walk') {
+    cat.x += cat.dir * 4; cat.frame ^= 1;
+    if ((cat.dir > 0 && cat.x >= cat.target) || (cat.dir < 0 && cat.x <= cat.target)) { cat.state = 'sit'; cat.until = now + 3500 + Math.random() * 6000; }
+  }
+  placeCat(false);
+}
+setInterval(catTick, 150);
+function bindCatHover() {
+  const el = $('#cat');
+  el.addEventListener('mouseenter', () => { if (matchMedia('(hover:hover)').matches && !cat.pop) { clearTimeout(hoverTimer); hoverTimer = setTimeout(() => showCatMenu(true), 250); } });
+  el.addEventListener('mouseleave', () => { clearTimeout(hoverTimer); if (cat.pop && cat.pop.hover) hoverTimer = setTimeout(hideCatPop, 500); });
+  el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleCatMenu(); } });
+}
+function catMenuHTML() {
+  return `<div class="msg"><b>¿Te ayudo?</b>Estoy aquí si te atoras.</div><div class="menu-list">
+    <button data-a="catHelp">${ic('help', 20)}<span class="grow">¿Qué hago aquí?</span></button>
+    <button data-a="catGuide">${ic('eye', 20)}<span class="grow">Muéstrame cómo</span></button>
+    <button data-a="toast" data-msg="En la app real se abre WhatsApp con soporte de Catmin.">${ic('chat', 20)}<span class="grow">Hablar con soporte</span></button>
+    <button data-a="catSleep">${ic('moon', 20)}<span class="grow">${cat.userSleep ? 'Despertar al gato' : 'Dormir al gato'}</span></button></div>`;
+}
+function showCatMenu(hover) { cat.pop = { type: 'menu', hover }; renderPop(catMenuHTML()); }
+function toggleCatMenu() { if (cat.pop && cat.pop.type === 'menu') hideCatPop(); else showCatMenu(false); }
+function catSay(title, text, actions, ms) {
+  if (S.view === 'public') return;
+  cat.pop = { type: 'say' };
+  renderPop(`<div class="msg">${title ? `<b>${esc(title)}</b>` : ''}${esc(text)}</div>${actions && actions.length ? `<div class="acts">${actions.map((a, i) => `<button class="btn btn-sm ${i ? 'btn-ghost' : 'btn-primary'}" data-a="${a[1]}">${esc(a[0])}</button>`).join('')}</div>` : ''}`);
+  clearTimeout(popTimer); if (ms) popTimer = setTimeout(hideCatPop, ms);
+}
+function renderPop(html) {
+  const root = $('#cat-pop-root'); if (!root) return;
+  root.innerHTML = `<div class="cat-pop" id="cat-pop" role="dialog" aria-label="Ayuda del gato">${html}</div>`;
+  const pop = $('#cat-pop');
+  pop.addEventListener('mouseenter', () => clearTimeout(hoverTimer));
+  pop.addEventListener('mouseleave', () => { if (cat.pop && cat.pop.hover) hoverTimer = setTimeout(hideCatPop, 500); });
+  positionPop();
+}
+function positionPop() {
+  const pop = $('#cat-pop'), el = $('#cat'); if (!pop || !el) return;
+  const ar = appRect(), w = ar.width, cb = parseFloat(el.style.bottom) || 0;
+  let bottom = cb + 42;
+  if (bottom + pop.offsetHeight > ar.height - 8) bottom = Math.max(8, cb - pop.offsetHeight - 6);
+  pop.style.bottom = bottom + 'px';
+  pop.style.left = Math.max(8, Math.min(cat.x - 100, w - 258)) + 'px';
+}
+function hideCatPop() { cat.pop = null; clearTimeout(popTimer); const r = $('#cat-pop-root'); if (r) r.innerHTML = ''; }
+function celebrate() {
+  const el = $('#cat'); if (!el || RM) return;
+  el.classList.remove('jump'); void el.offsetWidth; el.classList.add('jump');
+  setTimeout(() => el.classList.remove('jump'), 700);
+}
+
+/* ---------- guía ("Muéstrame cómo") ---------- */
+function guideTarget() {
+  const ctx = currentCtx();
+  if (ctx === 'na') {
+    const n = S.sheet; const g = G();
+    const hasClient = n.clientId || (n.newMode && n.newName.trim().length > 2 && n.newPhone.replace(/\D/g, '').length === 10);
+    if (!hasClient) return ['[data-step="client"]', n.newMode ? 'Escribe el nombre y su WhatsApp a 10 dígitos.' : `Primero elige a quién: escribe su nombre y tócalo en la lista.`];
+    if (!n.serviceId) return ['[data-step="service"]', 'Ahora toca el servicio.'];
+    if (n.time == null) return ['[data-step="time"]', 'Elige el día arriba y luego una hora libre. Las tachadas ya están ocupadas.'];
+    return ['[data-step="save"]', 'Todo listo. Toca Agendar cita.'];
+  }
+  if (ctx === 'pay') {
+    if (!S.sheet.pays.length) return ['[data-guide="pay"]', 'Toca la forma en que te pagaron. Si fueron dos, empieza por una.'];
+    return ['.paylines', 'Escribe cuánto fue en cada forma de pago. Si hay dos, el resto se ajusta solo.'];
+  }
+  const h = helpFor();
+  return h[2] ? [h[2], h[3]] : [null, h[1]];
+}
+function showGuide() {
+  hideCatPop();
+  const [sel, text] = guideTarget();
+  const app = $('#app'); const target = sel ? app.querySelector(sel) : null;
+  if (!target) { catSay('', text, null, 6000); return; }
+  target.scrollIntoView({ block: 'center', behavior: 'auto' });
+  requestAnimationFrame(() => {
+    const ar = app.getBoundingClientRect(), r = target.getBoundingClientRect();
+    const top = r.top - ar.top, below = top + r.height + 14 + 120 < ar.height;
+    $('#guide-root').innerHTML = `<div class="guide" data-a="guideClose"><div class="ring" style="left:${r.left - ar.left - 6}px;top:${top - 6}px;width:${r.width + 12}px;height:${r.height + 12}px"></div><div class="guide-tip" style="${below ? `top:${top + r.height + 14}px` : `top:${Math.max(12, top - 130)}px`}"><div class="r"><span class="mini">${catSVG('sit', CATS[S.cat])}</span><span>${esc(text)}</span></div><button class="btn btn-primary btn-sm" style="align-self:flex-end">Entendido</button></div></div>`;
+  });
+}
+
+/* ---------- acciones ---------- */
+function addToCart(item, qty = 1) {
+  if (!S.cart) S.cart = { clientId: null, apptId: null, lines: [] };
+  const l = S.cart.lines.find(x => x.itemId === item.id);
+  if (l) l.qty += qty; else S.cart.lines.push({ key: uid('l'), itemId: item.id, name: item.name, price: item.price, qty });
+}
+function syncPays(changedIdx) {
+  const pays = S.sheet.pays, total = cartTotal();
+  if (pays.length === 2 && changedIdx != null) {
+    const other = changedIdx === 0 ? 1 : 0;
+    pays[other].amount = Math.max(0, Math.round((total - (pays[changedIdx].amount || 0)) * 100) / 100);
+    const inp = $('#pay-' + other); if (inp) inp.value = pays[other].amount || '';
+  }
+  pays.forEach((p, i) => { const c = $('#change-' + i); if (c) c.textContent = changeText(p); });
+  const ps = $('#pay-state'); if (ps) ps.innerHTML = payStateHTML();
+}
+const A = {
+  tab(el) { S.tab = el.dataset.v; S.stack = []; S.sheet = null; S.clientTab = 'record'; if (S.tab === 'agenda' && el.closest('.alert')) S.day = 0; render(); },
+  day(el) { S.day = +el.dataset.v; render(); },
+  openAppt(el) { openSheet('appt', { id: el.dataset.id }); },
+  newAppt(el) {
+    openSheet('na', { clientId: el.dataset.client || null, q: '', newMode: false, newName: '', newPhone: '', serviceId: null, day: el.dataset.day != null ? +el.dataset.day : (S.tab === 'agenda' ? S.day : 0), time: el.dataset.time != null ? +el.dataset.time : null, id: uid('na') });
+    clearTimeout(naTimer);
+    const sid = S.sheet.id;
+    naTimer = setTimeout(() => { if (S.sheet && S.sheet.id === sid && S.sheet.type === 'na') catSay('¿Te ayudo con este paso?', 'Te muestro qué falta para agendar.', [['Sí, muéstrame', 'catGuide'], ['No, gracias', 'catClose']]); }, 25000);
+  },
+  naClient(el) { S.sheet.clientId = el.dataset.id || null; if (!el.dataset.id) { S.sheet.q = ''; S.sheet.newMode = false; } render(); },
+  naNewMode(el) { S.sheet.newMode = el.dataset.v === '1'; if (S.sheet.newMode && S.sheet.q) S.sheet.newName = S.sheet.q; render(); const f = $(S.sheet.newMode ? '#na-new-name' : '#na-q'); if (f) f.focus(); },
+  naService(el) { S.sheet.serviceId = el.dataset.id; if (S.sheet.time != null) { const sv = svc(el.dataset.id); const ok = slotsFor(S.sheet.day, sv.dur).find(s => s.t === S.sheet.time); if (!ok || !ok.ok) S.sheet.time = null; } render(); },
+  naDay(el) { S.sheet.day = +el.dataset.v; S.sheet.time = null; render(); },
+  naTime(el) { S.sheet.time = +el.dataset.v; render(); },
+  naSave() {
+    const n = S.sheet; if (S.offline) return;
+    let cid = n.clientId;
+    if (!cid) { cid = uid('c'); S.data.clients.push({ id: cid, name: n.newName.trim(), phone: n.newPhone.trim() }); S.data.records[cid] = []; }
+    const a = { id: uid('a'), clientId: cid, serviceId: n.serviceId, day: n.day, start: n.time, status: 'confirmed', paid: false };
+    S.data.appts.push(a); clearTimeout(naTimer);
+    S.day = n.day; openSheet('naDone', { id: a.id }); celebrate();
+  },
+  confirmAppt(el) { const a = S.data.appts.find(x => x.id === el.dataset.id); a.status = 'confirmed'; closeSheet(); toast('Cita confirmada'); celebrate(); },
+  attendAppt(el) { const a = S.data.appts.find(x => x.id === el.dataset.id); a.status = 'completed'; S.sheet = { type: 'appt', id: a.id }; render(); toast('Marcada como atendida'); },
+  cancelAppt(el) {
+    const a = S.data.appts.find(x => x.id === el.dataset.id); const prev = a.status; a.status = 'cancelled'; closeSheet();
+    toast('Cita cancelada', () => { a.status = prev; render(); });
+  },
+  undo() { if (S.undo) { const u = S.undo; S.undo = null; $('#toast-root').innerHTML = ''; u(); } },
+  openClient(el) { S.sheet = null; S.stack = [{ id: el.dataset.id }]; S.clientTab = 'record'; render(); },
+  back() { S.stack.pop(); render(); },
+  clientTab(el) { S.clientTab = el.dataset.v; render(); },
+  toggleEntry(el) { S.openEntries[el.dataset.id] = !S.openEntries[el.dataset.id]; render(); },
+  newNote(el) { openSheet('note', { id: el.dataset.id }); },
+  noteSave() {
+    const g = G(), cid = S.sheet.id; const body = [];
+    g.note.fields.forEach(([l], i) => { const v = $('#nf-' + i).value.trim(); if (v) body.push([l, v]); });
+    if (!body.length) { toast('Escribe al menos un campo.'); return; }
+    S.data.records[cid].unshift({ id: uid('r'), ago: 0, title: g.note.name, body, private: !!g.note.private, author: g.pro });
+    S.openEntries = {}; closeSheet(); toast('Nota guardada'); celebrate();
+  },
+  doc(el) { openSheet('doc', { id: el.dataset.id }); },
+  cobrarCliente(el) { S.cart = S.cart && S.cart.lines.length ? S.cart : { clientId: null, apptId: null, lines: [] }; S.cart.clientId = el.dataset.id; S.tab = 'cobrar'; S.stack = []; S.sheet = null; render(); },
+  cobrarAppt(el) {
+    const a = S.data.appts.find(x => x.id === el.dataset.id);
+    S.cart = { clientId: a.clientId, apptId: a.id, lines: [] }; addToCart(svc(a.serviceId));
+    S.tab = 'cobrar'; S.stack = []; S.sheet = null; render(); toast(`${svc(a.serviceId).name} agregado. Agrega algo más o toca Cobrar.`);
+  },
+  pickClient() { openSheet('pickClient'); },
+  unpickClient() { if (S.cart) { S.cart.clientId = null; S.cart.apptId = null; } render(); },
+  setCartClient(el) { if (!S.cart) S.cart = { clientId: null, apptId: null, lines: [] }; S.cart.clientId = el.dataset.id; closeSheet(); },
+  catTab(el) { S.catTab = el.dataset.v; render(); },
+  addItem(el) { addToCart(svc(el.dataset.id)); render(); },
+  freeItem() { openSheet('free'); setTimeout(() => { const f = $('#free-name'); if (f) f.focus(); }, 50); },
+  freeSave() {
+    const name = $('#free-name').value.trim(), price = num($('#free-price').value);
+    if (!name || !price) { toast('Escribe qué es y cuánto cuesta.'); return; }
+    if (!S.cart) S.cart = { clientId: null, apptId: null, lines: [] };
+    S.cart.lines.push({ key: uid('l'), itemId: null, name, price, qty: 1 }); closeSheet();
+  },
+  clearCart() { const prev = S.cart; S.cart = null; render(); toast('Venta vaciada', () => { S.cart = prev; render(); }); },
+  checkout() {
+    openSheet('pay', { pays: [], id: 'pay' });
+    clearTimeout(payTimer);
+    payTimer = setTimeout(() => { if (S.sheet && S.sheet.type === 'pay') { const sum = S.sheet.pays.reduce((a, p) => a + (p.amount || 0), 0); if (sum !== cartTotal()) catSay('Tip', 'Puedes combinar formas de pago: escribe cuánto fue en efectivo y agrega la otra. El resto se ajusta solo.', [['Muéstrame', 'catGuide'], ['Ok', 'catClose']]); } }, 20000);
+  },
+  qty(el) {
+    const l = S.cart.lines.find(x => x.key === el.dataset.k); l.qty += +el.dataset.v;
+    if (l.qty <= 0) S.cart.lines = S.cart.lines.filter(x => x !== l);
+    if (!S.cart.lines.length) { closeSheet(); return; }
+    if (S.sheet.pays.length === 1) S.sheet.pays[0].amount = cartTotal();
+    render();
+  },
+  payAdd(el) {
+    const pays = S.sheet.pays, total = cartTotal();
+    const sum = pays.reduce((a, p) => a + (p.amount || 0), 0);
+    pays.push({ method: el.dataset.v, amount: Math.max(0, total - sum), received: '' });
+    render();
+    const i = pays.length - 1; const inp = $('#pay-' + i);
+    if (inp && pays.length > 1) { inp.focus(); inp.select(); }
+  },
+  payRemove(el) { S.sheet.pays.splice(+el.dataset.v, 1); if (S.sheet.pays.length === 1) S.sheet.pays[0].amount = cartTotal(); render(); },
+  paySubmit() {
+    if (S.offline) return;
+    const pays = S.sheet.pays.filter(p => p.amount > 0).map(p => ({ method: p.method, amount: p.amount }));
+    const v = { id: uid('v'), clientId: S.cart.clientId, day: 0, apptId: S.cart.apptId, lines: S.cart.lines.map(l => ({ name: l.name, price: l.price, qty: l.qty })), total: cartTotal(), payments: pays, isNew: true };
+    clearTimeout(payTimer);
+    openSheet('processing');
+    setTimeout(() => {
+      S.data.sales.push(v);
+      if (v.apptId) { const a = S.data.appts.find(x => x.id === v.apptId); if (a) a.paid = true; }
+      else if (v.clientId) { const a = S.data.appts.find(x => x.clientId === v.clientId && x.day === 0 && x.status === 'completed' && !x.paid); if (a) a.paid = true; }
+      S.cart = null; S.cobrarQ = '';
+      openSheet('paid', { id: v.id }); celebrate();
+    }, RM ? 200 : 900);
+  },
+  ticket(el) { openSheet('ticket', { id: el.dataset.id }); },
+  perfil() { openSheet('perfil'); },
+  quick() { openSheet('quick'); },
+  openTasks() { openSheet('tasks'); },
+  startTask(el) { const t = S.tasks[+el.dataset.v]; t.start = Date.now(); t.done = false; render(); },
+  stopTask(el) { S.tasks[+el.dataset.v] = {}; render(); },
+  setGiro(el) { S.giro = el.dataset.v; store.set('giro', S.giro); resetAll(); render(); toast(`Giro: ${G().label}`); },
+  setCat(el) { S.cat = el.dataset.v; store.set('cat', S.cat); render(); },
+  toggleOffline() { S.offline = !S.offline; render(); if (S.offline && S.view === 'app') setTimeout(() => catSay('Sin conexión', 'Puedes consultar todo lo que ya tenías. Para guardar cambios espera a tener internet.', null, 6000), 200); },
+  viewPublic() { S.view = 'public'; S.sheet = null; S.pub = { step: 'profile', serviceId: null, day: 1, time: null, name: '', phone: '', consent: false, code: 'CAT-' + Math.floor(10000 + Math.random() * 89999) }; hideCatPop(); render(); },
+  viewApp() { S.view = 'app'; S.pub = null; render(); },
+  reset() { resetAll(); render(); toast('Datos y tareas reiniciados'); },
+  sheetClose() { clearTimeout(naTimer); clearTimeout(payTimer); closeSheet(); },
+  toast(el) { toast(el.dataset.msg); },
+  catHelp() { const h = helpFor(); catSay(h[0], h[1], [['Muéstrame cómo', 'catGuide']], 9000); },
+  catGuide() { showGuide(); },
+  catClose() { hideCatPop(); },
+  catSleep() { cat.userSleep = !cat.userSleep; hideCatPop(); cat.key = ''; placeCat(true); toast(cat.userSleep ? 'El gato se durmió. Tócalo para despertarlo.' : 'El gato despertó'); },
+  guideClose() { $('#guide-root').innerHTML = ''; },
+  pubStart() { S.pub.step = 'service'; render(); },
+  pubPick(el) { S.pub.serviceId = el.dataset.id; if (S.pub.step === 'profile') S.pub.step = 'time'; render(); },
+  pubDay(el) { S.pub.day = +el.dataset.v; S.pub.time = null; render(); },
+  pubTime(el) { S.pub.time = +el.dataset.v; render(); },
+  pubNext() { const p = S.pub; p.step = p.step === 'service' ? 'time' : 'data'; render(); },
+  pubBack() { const p = S.pub; p.step = { service: 'profile', time: p.serviceId && p.cameFromProfile ? 'profile' : 'service', data: 'time' }[p.step] || 'profile'; render(); },
+  pubConsent() { S.pub.consent = !S.pub.consent; render(); },
+  pubWa() { S.pub.step = 'wa'; render(); },
+  pubSend() {
+    const p = S.pub, g = G();
+    p.step = 'waSent';
+    const cid = uid('c'); S.data.clients.push({ id: cid, name: p.name.trim(), phone: p.phone.replace(/\D/g, '').replace(/(\d{2})(\d{4})(\d{4})/, '$1 $2 $3') }); S.data.records[cid] = [];
+    S.data.appts.push({ id: uid('a'), clientId: cid, serviceId: p.serviceId, day: p.day, start: p.time, status: 'confirmed', paid: false, source: 'web' });
+    render();
+  },
+  pubDone() { S.pub.step = 'done'; S.flags.t4 = true; render(); },
+  pubRestart() { S.view = 'app'; S.pub = null; S.tab = 'hoy'; S.stack = []; render(); }
+};
+
+/* ---------- eventos ---------- */
+document.addEventListener('click', e => {
+  lastAct = Date.now();
+  if (cat.userSleep === false && cat.state === 'sleep') { cat.state = 'sit'; cat.until = Date.now() + 1500; }
+  const catEl = e.target.closest('#cat');
+  if (catEl) { if (cat.userSleep) { A.catSleep(); return; } if (!(cat.pop && cat.pop.hover)) toggleCatMenu(); else cat.pop.hover = false; return; }
+  const el = e.target.closest('[data-a]');
+  if (!el) { if (cat.pop && !e.target.closest('#cat-pop')) hideCatPop(); return; }
+  if (el.disabled) return;
+  const a = el.dataset.a;
+  if (cat.pop && !el.closest('#cat-pop') && a !== 'guideClose') hideCatPop();
+  if (A[a]) A[a](el, e);
+});
+document.addEventListener('input', e => {
+  lastAct = Date.now();
+  const t = e.target;
+  if (t.id === 'q-clients') {
+    S.clientsQ = t.value; $('#client-list').innerHTML = clientListHTML();
+    if (S.clientsQ.trim().length > 2 && !$('#client-list .row') && !S.flags.noResultTip) { S.flags.noResultTip = true; catSay('', `No encontré a nadie así. Revisa cómo se escribe o agrégalo como ${G().client} nuevo.`, null, 6000); }
+  } else if (t.id === 'q-items') { S.cobrarQ = t.value; $('#items-grid').innerHTML = itemsGridHTML(); }
+  else if (t.id === 'na-q') { S.sheet.q = t.value; $('#na-results').innerHTML = naResultsHTML(); }
+  else if (t.id === 'na-new-name' || t.id === 'na-new-phone') {
+    if (t.id === 'na-new-name') S.sheet.newName = t.value; else S.sheet.newPhone = t.value;
+    const n = S.sheet; const ok = n.newName.trim().length > 2 && n.newPhone.replace(/\D/g, '').length === 10;
+    $('.sheet-f').innerHTML = naFooter(ok, n.serviceId ? svc(n.serviceId) : null);
+  } else if (t.dataset.pay != null) { const i = +t.dataset.pay; S.sheet.pays[i].amount = num(t.value); syncPays(i); }
+  else if (t.dataset.rec != null) { const i = +t.dataset.rec; S.sheet.pays[i].received = t.value; syncPays(null); }
+  else if (t.id === 'pub-name' || t.id === 'pub-phone') {
+    if (t.id === 'pub-name') S.pub.name = t.value; else S.pub.phone = t.value;
+    const st = document.querySelector('.pub-sticky'); if (st) st.outerHTML = pubSticky();
+    if (t.id === 'pub-phone' && S.pub.phoneTouched) { const ok = S.pub.phone.replace(/\D/g, '').length === 10; t.classList.toggle('err', !ok); $('#pub-phone-err').hidden = ok; }
+  }
+});
+document.addEventListener('focusout', e => {
+  if (e.target.id === 'pub-phone') { S.pub.phoneTouched = true; const ok = S.pub.phone.replace(/\D/g, '').length === 10; e.target.classList.toggle('err', !ok); const m = $('#pub-phone-err'); if (m) m.hidden = ok; }
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { if ($('#guide-root').innerHTML) A.guideClose(); else if (cat.pop) hideCatPop(); else if (S.sheet && !SHEETS[S.sheet.type]().noClose) A.sheetClose(); } });
+window.addEventListener('resize', () => { renderPanel(); placeCat(true); });
+
+/* ---------- inicio ---------- */
+(function init() {
+  const sg = store.get('giro'), sc = store.get('cat');
+  if (sg && GIROS[sg]) S.giro = sg;
+  if (sc && CATS[sc]) S.cat = sc;
+  const h = (location.hash || '').replace('#', '');
+  const [hg, hv] = h.split('-');
+  if (GIROS[hg]) S.giro = hg;
+  resetAll();
+  if (hv === 'reserva') A.viewPublic();
+  render();
+  setTimeout(() => { if (S.view === 'app' && !S.sheet) catSay('¡Hola!', 'Soy tu gato de ayuda. Si te atoras, tócame.', null, 5000); }, 1800);
+})();
+</script>
+
+</body>
+</html>
