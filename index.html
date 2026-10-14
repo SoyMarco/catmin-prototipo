@@ -56,7 +56,7 @@ input,textarea{font:inherit;color:var(--text)}
 .panel{background:var(--surface);border-radius:var(--r-lg);padding:24px;display:flex;flex-direction:column;gap:20px;max-height:calc(100vh - 48px);overflow:auto;box-shadow:var(--shadow)}
 .panel h2{margin:0;font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--text-2);font-weight:700}
 .brand{display:flex;align-items:center;gap:10px}
-.brand svg{width:40px;height:auto;flex:none}
+.brand svg{width:48px;height:auto;flex:none}
 .brand b{font-size:22px;font-weight:800;letter-spacing:-.02em}
 .tag{font-size:12px;font-weight:600;padding:4px 10px;border-radius:var(--pill);background:var(--surface-2);color:var(--text-2)}
 .panel p{margin:0;color:var(--text-2);font-size:14px}
@@ -68,7 +68,7 @@ input,textarea{font:inherit;color:var(--text)}
 .swatch{width:46px;height:46px;border-radius:14px;background:var(--surface);display:grid;place-items:center}
 .panel .swatch{background:var(--bg)}
 .swatch[aria-pressed="true"]{background:var(--accent-soft);box-shadow:inset 0 0 0 2px var(--accent)}
-.swatch svg{width:30px;height:auto}
+.swatch svg{width:32px;height:auto}
 .switch-row{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:15px;font-weight:600}
 .switch{width:51px;height:31px;border-radius:var(--pill);background:var(--fill);position:relative;flex:none;transition:background .2s}
 .switch::after{content:"";position:absolute;top:2px;left:2px;width:27px;height:27px;border-radius:50%;background:#fff;box-shadow:0 3px 8px rgba(0,0,0,.15),0 1px 1px rgba(0,0,0,.06);transition:transform .2s}
@@ -86,8 +86,7 @@ input,textarea{font:inherit;color:var(--text)}
 /* Pantalla */
 .screen{flex:1;overflow-y:auto;overflow-x:hidden;padding-top:14px;padding-bottom:calc(var(--nav-h) + 76px);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:22px}
 .screen > *{flex-shrink:0}
-.screen.public{padding:0 0 110px;gap:0;background:var(--surface)}
-.screen.public.done,.screen.public:has(.pub-body){background:var(--bg)}
+.screen.public{padding:0 0 110px;gap:0;background:var(--bg)}
 .screen.public.chatmode{padding-bottom:0}
 .top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
 .top .lt{min-width:0}
@@ -322,20 +321,22 @@ textarea.input{height:auto;min-height:88px;padding:12px 14px;resize:vertical;lin
 .cover,.confirm-photo{background:radial-gradient(circle at 20% 30%,rgba(255,255,255,.3) 0 2px,transparent 3px) 0 0/18px 18px,linear-gradient(160deg,#e7effb 0%,#0d76ff 120%)}
 .cover{height:230px;display:flex;align-items:flex-end;padding:16px 16px 40px}
 .cover-hint{background:rgba(255,255,255,.9);border-radius:var(--pill);padding:6px 12px;font-size:12px;font-weight:600;color:var(--text)}
-.pub-sheet{background:var(--surface);border-radius:24px 24px 0 0;margin-top:-24px;position:relative;padding:24px max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:20px}
+.pub-sheet{background:var(--bg);border-radius:24px 24px 0 0;margin-top:-24px;position:relative;padding:24px max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:20px}
 .pub-title{text-align:center;display:flex;flex-direction:column;gap:4px;align-items:center}
 .pub-title h1{margin:0;font-size:26px;line-height:1.15;font-weight:800;letter-spacing:-.02em;text-wrap:balance}
 .pub-title p{margin:0;color:var(--text-2);font-size:15px}
-.highlights{display:grid;grid-template-columns:repeat(3,1fr);background:var(--bg);border-radius:16px;padding:14px 0}
+.highlights{display:grid;grid-template-columns:repeat(3,1fr);background:var(--surface);border-radius:16px;padding:14px 0}
 .highlights div{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;font-size:12px;font-weight:600;line-height:1.25;padding:0 8px}
 .highlights svg{color:var(--accent)}
-.highlights div + div{border-left:1px solid var(--border-strong)}
-.host{display:flex;align-items:center;gap:12px;padding:16px 0;border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline)}
+.highlights div + div{border-left:1px solid var(--hairline)}
+.host{display:flex;align-items:center;gap:12px;padding:16px;background:var(--surface);border-radius:var(--r-md)}
 .bio{margin:0;font-size:16px;line-height:1.5}
 .pub-sec{display:flex;flex-direction:column;gap:4px}
 .pub-sec h2{margin:0 0 4px;font-size:20px;font-weight:700;letter-spacing:-.015em}
 .svc-row{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--hairline);text-align:left;width:100%}
 .svc-row .grow{flex:1;min-width:0}
+.svc-list{background:var(--surface);border-radius:var(--r-md);padding:0 16px}
+.svc-list .svc-row:last-child{border-bottom:0}
 .info-row{display:flex;gap:12px;align-items:flex-start;font-size:15px;padding:4px 0}
 .info-row svg{color:var(--text-2);flex:none}
 .powered{text-align:center;color:var(--text-2);font-size:13px;margin:8px 0 0}
@@ -379,9 +380,9 @@ textarea.input{height:auto;min-height:88px;padding:12px 14px;resize:vertical;lin
 
 /* Gato */
 .cat-layer{position:absolute;inset:0;pointer-events:none;z-index:40}
-.cat{position:absolute;left:0;width:48px;height:36px;pointer-events:auto;cursor:pointer;transition:bottom .15s ease}
-.cat .spr{width:48px;height:36px;display:block;transform-origin:center}
-.cat .spr svg{display:block;width:48px;height:36px;image-rendering:pixelated}
+.cat{position:absolute;left:0;width:64px;height:48px;pointer-events:auto;cursor:pointer;transition:bottom .15s ease}
+.cat .spr{width:64px;height:48px;display:block;transform-origin:center}
+.cat .spr svg{display:block;width:64px;height:48px;image-rendering:pixelated}
 .cat.jump .spr{animation:jump .6s ease}
 .zz{position:absolute;top:-14px;right:-4px;font-size:12px;font-weight:800;color:var(--text-2);animation:zz 2s ease-in-out infinite}
 .cat-pop{position:absolute;width:250px;background:var(--surface);border-radius:18px;box-shadow:var(--shadow-float),0 2px 8px rgba(0,60,112,.08);padding:8px;pointer-events:auto;animation:pop .18s ease}
@@ -505,34 +506,132 @@ const proName = g => g.pro.replace(/^(Dra?\.|Psic\.|Nut\.)\s/, '');
 const syncHTML = () => S.offline ? '<span class="sync"><i class="dot off"></i>Sin conexión</span>' : '<span class="sync"><i class="dot"></i>Al día</span>';
 const ic = (n, s = 22, sw = 1.8) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[n] || ''}</svg>`;
 
-/* ---------- gato (pixel art original) ---------- */
-const SPR = {
-  walk1: ['..........o....o', '..........op..po', 't.........okkkko', 'tt........okekek', 'tt........okkkpk', '.tt.......okkkkk', '..ofxffxffxffff.', '..offffffffffffo', '..oxffxffxffxffo', '..ollllllllllffo', '...og.og..og.og.', '...oo.oo..oo.oo.'],
-  walk2: ['..........o....o', '..........op..po', 't.........okkkko', 'tt........okekek', 'tt........okkkpk', '.tt.......okkkkk', '..ofxffxffxffff.', '..offffffffffffo', '..oxffxffxffxffo', '..ollllllllllffo', '..og..og.og..og.', '..oo..oo.oo..oo.'],
-  sit: ['..........o....o', '..........op..po', '..........okkkko', '..........okekek', '..........okkkpk', '.........okkkkk.', '......oofffffo..', '.....offxffxffo.', '....oxffffffffo.', 't...ollllllfffo.', 'tt..olllllgffgo.', '.tooooooooooooo.'],
-  sleep: ['................', '................', '................', '................', '................', '..........o...o.', '..........op.po.', '...oooooookkkkko', '..offxffxkokkokk', '..offffffkkkkpko', '.tollllllllllllo', 'tt.ooooooooooooo']
-};
+/* ---------- gato (pixel art original: 32×24, se arma por partes y se anima por cuadros) ---------- */
 const CATS = {
-  naranja: { name: 'Naranja', accent: '#C2410C', soft: '#FBEDE6', o: '#5A2E12', f: '#E8893A', l: '#F7C99A', x: '#C9662A', t: '#E8893A', k: '#E8893A', g: '#E8893A', p: '#F29CA3', e: '#1C1C1E' },
+  naranja: { name: 'Naranja', accent: '#C2410C', soft: '#FBEDE6', o: '#5A2E12', f: '#E8893A', l: '#F7C99A', x: '#C9662A', t: '#E8893A', k: '#E8893A', g: '#E8893A', p: '#F29CA3', e: '#1C1C1E', stripes: true },
   negro: { name: 'Negro', accent: '#1C1C1E', soft: '#ECEAE6', o: '#0E0E10', f: '#2B2B2F', l: '#3B3B40', x: '#2B2B2F', t: '#2B2B2F', k: '#2B2B2F', g: '#2B2B2F', p: '#D98A93', e: '#F2C94C' },
-  siames: { name: 'Siamés', accent: '#7A5640', soft: '#F3ECE6', o: '#3E2A1F', f: '#EADCC6', l: '#F7F0E4', x: '#EADCC6', t: '#6B4A35', k: '#6B4A35', g: '#6B4A35', p: '#D9A0A0', e: '#7FB3E6' },
-  atigrado: { name: 'Atigrado', accent: '#5B6474', soft: '#ECEEF1', o: '#2F3237', f: '#9A948C', l: '#D6D0C7', x: '#5E5A55', t: '#9A948C', k: '#9A948C', g: '#9A948C', p: '#E3A0A6', e: '#3C6E3A' },
+  siames: { name: 'Siamés', accent: '#7A5640', soft: '#F3ECE6', o: '#3E2A1F', f: '#EADCC6', l: '#F7F0E4', m: '#54392A', x: '#EADCC6', t: '#6B4A35', k: '#6B4A35', g: '#6B4A35', p: '#D9A0A0', e: '#7FB3E6' },
+  atigrado: { name: 'Atigrado', accent: '#5B6474', soft: '#ECEEF1', o: '#2F3237', f: '#9A948C', l: '#D6D0C7', x: '#5E5A55', t: '#9A948C', k: '#9A948C', g: '#9A948C', p: '#E3A0A6', e: '#3C6E3A', stripes: true },
   blanco: { name: 'Blanco', accent: '#2F66B3', soft: '#E9F0FA', o: '#8C96A3', f: '#FBFBFB', l: '#FFFFFF', x: '#FBFBFB', t: '#FBFBFB', k: '#FBFBFB', g: '#FBFBFB', p: '#F4A7B1', e: '#2F66B3' }
 };
+// Etiquetas de cada pixel: k cabeza, f cuerpo, t cola, g patas, l pecho y panza, m hocico, p rosa, n nariz,
+// e ojo, w brillo, h/j cuerpo y patas del lado lejano (sombra), s/y/z franjas de cuerpo, cola y cabeza.
+const CAT_W = 32, CAT_H = 24;
+const HEAD_TOP = ['k..........k', 'kk........kk', 'kpk......kpk', 'kppkkkkkkppk', 'kkkzkzzkzkkk', 'kkkkkkkkkkkk'];
+const HEAD_LOW = ['kkmmmnnmmmkk', '.kkmmmmmmkk.', '..kkkkkkkk..'];
+const HEADS = {
+  open: [...HEAD_TOP, 'kkewkkkkewkk', 'kkeekkkkeekk', ...HEAD_LOW],
+  blink: [...HEAD_TOP, 'kkkkkkkkkkkk', 'kkeekkkkeekk', ...HEAD_LOW],
+  happy: [...HEAD_TOP, 'kkeekkkkeekk', 'kekkekkekkek', ...HEAD_LOW],
+  sleep: [...HEAD_TOP, 'kekkekkekkek', 'kkeekkkkeekk', ...HEAD_LOW],
+  worried: ['............', '............', 'kk........kk', 'kpkkkkkkkkpk', 'kkkzkzzkzkkk', 'kkewkkkkewkk', 'kkeekkkkeekk', 'kkeekkkkeekk', ...HEAD_LOW]
+};
+const CAT_FACE = { walk: 'open', sit: 'open', wait: 'open', happy: 'happy', worried: 'worried', sleep: 'sleep' };
+
+function catLabels(pose, i, face) {
+  const g = Array.from({ length: CAT_H }, () => Array(CAT_W).fill('.'));
+  const put = (x, y, c) => { if (x >= 0 && x < CAT_W && y >= 0 && y < CAT_H) g[y][x] = c; };
+  const at = (x, y) => (g[y] && g[y][x]) || '.';
+  const ell = (cx, cy, rx, ry, c) => { for (let y = 0; y < CAT_H; y++) for (let x = 0; x < CAT_W; x++) if (((x - cx) / rx) ** 2 + ((y - cy) / ry) ** 2 <= 1) put(x, y, c); };
+  const box = (x0, y0, x1, y1, r, c) => {
+    for (let y = y0; y <= y1; y++) for (let x = x0; x <= x1; x++) {
+      const cx = Math.min(Math.max(x, x0 + r), x1 - r), cy = Math.min(Math.max(y, y0 + r), y1 - r);
+      if ((x - cx) ** 2 + (y - cy) ** 2 <= r * r + .5) put(x, y, c);
+    }
+  };
+  const paint = (x0, y0, x1, y1, from, to) => { for (let y = y0; y <= y1; y++) for (let x = x0; x <= x1; x++) if (from.includes(at(x, y))) put(x, y, to); };
+  const stamp = (rows, ox, oy) => rows.forEach((r, y) => [...r].forEach((c, x) => { if (c !== '.') put(ox + x, oy + y, c); }));
+  const tail = (p0, p1, p2) => {
+    const pt = s => { const t = s / 24, u = 1 - t; return [Math.round(u * u * p0[0] + 2 * u * t * p1[0] + t * t * p2[0]), Math.round(u * u * p0[1] + 2 * u * t * p1[1] + t * t * p2[1])]; };
+    const dab = ([x, y], c) => { put(x, y, c); put(x + 1, y, c); put(x, y + 1, c); put(x + 1, y + 1, c); };
+    for (let s = 0; s <= 24; s++) dab(pt(s), 't');
+    [9, 15, 21].forEach(s => dab(pt(s), 'y'));
+  };
+  const leg = (x0, y0, y1, dx, lift, far) => {
+    const n = y1 - y0;
+    for (let k = 0; k <= n - lift; k++) {
+      const x = x0 + Math.round(dx * k / n), paw = k >= n - lift - 1;
+      const c = far ? (paw ? 'j' : 'h') : (paw ? 'g' : 'f');
+      put(x, y0 + k, c); put(x + 1, y0 + k, c); put(x + 2, y0 + k, c);
+    }
+  };
+  const stripesOn = (xs, rows) => xs.forEach(x => { let y = 0; while (y < CAT_H && at(x, y) !== 'f') y++; for (let k = 0; k < rows; k++) if (at(x, y + k) === 'f') put(x, y + k, 's'); });
+
+  if (pose === 'walk') {
+    const ph = i / 6 * Math.PI * 2, bob = i % 3 === 0 ? 1 : 0, top = 9 - bob, bottom = 17 - bob;
+    const L = (x, a, far) => leg(x, bottom, 22, Math.round(2 * Math.sin(a)), Math.cos(a) > .5 ? 1 : 0, far);
+    tail([7, top + 3], [1, top + 2], [2 + Math.round(Math.sin(ph)), 2]);
+    L(9, ph + Math.PI, true); L(18, ph, true);
+    box(6, top, 23, bottom, 2, 'f');
+    paint(9, bottom - 1, 19, bottom, ['f'], 'l');
+    paint(20, top + 4, 23, bottom - 1, ['f'], 'l');
+    stripesOn([9, 10, 13, 14, 17], 2);
+    L(11, ph, false); L(20, ph + Math.PI, false);
+    stamp(HEADS[face], 19, top - 7);
+  } else if (pose === 'sleep') {
+    const ry = i % 2 ? 4.4 : 5;
+    ell(14, 22.4 - ry, 10, ry, 'f');
+    stripesOn([8, 9, 12, 13, 16], 2);
+    tail([5, 20], [9, 21], [18, 21]);
+    box(21, 20, 25, 22, 1, 'g');
+    stamp(HEADS[face], 19, 11);
+  } else {
+    const tails = {
+      sit: [[7, 20], [1, 21], [2 + [0, 1, 2, 1][i % 4], 12]],
+      wait: [[8, 20], [4, 21], [1, 20 - [0, 2, 3, 1][i % 4]]],
+      happy: [[7, 17], [2, 14], [3, 4]]
+    };
+    if (tails[pose]) tail(...tails[pose]);
+    ell(11.5, 17.5, 5.5, 5, 'f');
+    box(12, 11, 19, 22, 2, 'f');
+    paint(15, 12, 19, 15, ['f'], 'l');
+    stripesOn([7, 8, 10, 11], 2);
+    box(9, 21, 13, 22, 1, 'g');
+    leg(14, 15, 22, 0, 0, true);
+    if (pose === 'worried') tail([9, 21], [13, 21], [18, 21]);
+    leg(17, 14, 22, 0, 0, false);
+    paint(17, 15, 17, 20, ['f'], 'h');
+    stamp(HEADS[face], 11, 1);
+  }
+  return g;
+}
+
+const mixHex = (a, b, t) => '#' + [1, 3, 5].map(k => Math.round(parseInt(a.slice(k, k + 2), 16) * (1 - t) + parseInt(b.slice(k, k + 2), 16) * t).toString(16).padStart(2, '0')).join('');
+const shade = c => mixHex(c, '#000000', .22);
+const light = c => mixHex(c, '#ffffff', .25);
+function catPixels(labels, pal) {
+  const base = {
+    f: pal.f, k: pal.k, t: pal.t, g: pal.g, l: pal.l, m: pal.m || pal.l, p: pal.p, n: pal.p, e: pal.e, w: '#ffffff',
+    h: shade(pal.f), j: shade(pal.g), s: pal.stripes ? pal.x : pal.f, y: pal.stripes ? pal.x : pal.t, z: pal.stripes ? pal.x : pal.k
+  };
+  const empty = (x, y) => !labels[y] || !labels[y][x] || labels[y][x] === '.';
+  return labels.map((row, y) => row.map((c, x) => {
+    if (c === '.') return [[0, 1], [1, 0], [0, -1], [-1, 0]].some(([dx, dy]) => !empty(x + dx, y + dy)) ? pal.o : null;
+    if ('fktg'.includes(c) && empty(x, y + 1)) return shade(base[c]);
+    if ('fkt'.includes(c) && empty(x, y - 1)) return light(base[c]);
+    return base[c];
+  }));
+}
+const CAT_SVG = new Map();
 function catSVG(key, pal, flip) {
-  const rows = SPR[key].map(r => r.padEnd(16, '.').slice(0, 16));
+  const id = `${key}|${pal.name}|${flip ? 1 : 0}`;
+  if (CAT_SVG.has(id)) return CAT_SVG.get(id);
+  const [pose, i = '0', face] = key.split(':');
+  const px = catPixels(catLabels(pose, +i, face || CAT_FACE[pose]), pal);
   let rects = '';
-  rows.forEach((row, y) => {
+  px.forEach((row, y) => {
     let x = 0;
-    while (x < 16) {
-      const ch = row[x];
-      if (ch === '.') { x++; continue; }
-      let w = 1; while (x + w < 16 && row[x + w] === ch) w++;
-      rects += `<rect x="${x}" y="${y}" width="${w}" height="1" fill="${pal[ch] || pal.f}"/>`;
+    while (x < CAT_W) {
+      const c = row[x];
+      if (!c) { x++; continue; }
+      let w = 1; while (x + w < CAT_W && row[x + w] === c) w++;
+      rects += `<rect x="${x}" y="${y}" width="${w}" height="1" fill="${c}"/>`;
       x += w;
     }
   });
-  return `<svg viewBox="0 0 16 12" shape-rendering="crispEdges" aria-hidden="true"${flip ? ' style="transform:scaleX(-1)"' : ''}>${rects}</svg>`;
+  const svg = `<svg viewBox="0 0 ${CAT_W} ${CAT_H}" shape-rendering="crispEdges" aria-hidden="true"${flip ? ' style="transform:scaleX(-1)"' : ''}>${rects}</svg>`;
+  CAT_SVG.set(id, svg);
+  return svg;
 }
 
 /* ---------- datos por giro ---------- */
@@ -994,7 +1093,7 @@ function renderPublic() {
       </div>
       <div class="host"><span class="avatar">${initials(proName(g))}</span><div style="min-width:0"><b style="display:block">Te atiende ${esc(g.pro)}</b><span class="sub" style="display:block;margin:0">${esc(g.title)}${g.cedula ? ' · Cédula ' + g.cedula : ''}</span></div></div>
       <p class="bio">${esc(g.bio)}</p>
-      <section class="pub-sec"><h2>Servicios</h2><div>${svcs.map(i => `<button class="svc-row" data-a="pubPick" data-id="${i.id}"><span class="grow"><b style="display:block">${esc(i.name)}</b><span class="sub" style="display:block;margin:0">${i.dur} min</span></span><b class="tnum">${money(i.price)}</b>${chev()}</button>`).join('')}</div></section>
+      <section class="pub-sec"><h2>Servicios</h2><div class="svc-list">${svcs.map(i => `<button class="svc-row" data-a="pubPick" data-id="${i.id}"><span class="grow"><b style="display:block">${esc(i.name)}</b><span class="sub" style="display:block;margin:0">${i.dur} min</span></span><b class="tnum">${money(i.price)}</b>${chev()}</button>`).join('')}</div></section>
       <section class="pub-sec"><h2>Horario</h2><div class="info-row">${ic('clock', 22)}<span>${esc(g.hours)}</span></div></section>
       <section class="pub-sec"><h2>Ubicación</h2><div class="info-row">${ic('pin', 22)}<span>${esc(g.address)}</span></div></section>
       <p class="powered">Agenda con Catmin</p>
@@ -1253,7 +1352,7 @@ function toast(msg, undo) {
 }
 
 /* ---------- gato: comportamiento ---------- */
-const cat = { x: 24, dir: 1, state: 'sit', frame: 0, until: Date.now() + 2500, target: 0, userSleep: false, pop: null, key: '' };
+const cat = { x: 24, dir: 1, state: 'sit', frame: 0, tick: 0, blinkUntil: 0, mood: null, moodUntil: 0, until: Date.now() + 2500, target: 0, userSleep: false, pop: null, key: '' };
 let lastAct = Date.now(), popTimer = null, hoverTimer = null, naTimer = null, payTimer = null;
 function appRect() { return $('#app').getBoundingClientRect(); }
 function catAnchor() {
@@ -1271,31 +1370,41 @@ function placeCat(force) {
   const a = catAnchor(); const el = $('#cat'); if (!a || !el) return;
   el.style.bottom = a.bottom + 'px';
   if (a.fixedX != null) { cat.x = a.fixedX; if (cat.state === 'walk') cat.state = 'sit'; }
-  const w = appRect().width; cat.x = Math.max(8, Math.min(cat.x, w - 56));
+  const w = appRect().width; cat.x = Math.max(8, Math.min(cat.x, w - 72));
   el.style.transform = `translateX(${cat.x}px)`;
   drawCat(force);
   if (cat.pop) positionPop();
 }
+function catSprite() {
+  const now = Date.now(), t = RM ? 0 : cat.tick;
+  if (cat.state === 'walk') return 'walk:' + cat.frame;
+  if (cat.state === 'sleep') return 'sleep:' + (Math.floor(t / 6) % 2);
+  if (cat.mood && now < cat.moodUntil) return cat.mood;
+  if (S.offline) return 'wait:' + (Math.floor(t / 2) % 4);
+  return 'sit:' + (Math.floor(t / 4) % 4) + (now < cat.blinkUntil ? ':blink' : '');
+}
 function drawCat(force) {
-  const key = (cat.state === 'walk' ? 'walk' + (cat.frame + 1) : cat.state) + (cat.dir < 0 ? 'L' : 'R') + S.cat;
+  const sprite = catSprite();
+  const key = sprite + (cat.dir < 0 ? 'L' : 'R') + S.cat;
   if (!force && key === cat.key) return;
   cat.key = key;
   const spr = $('#cat-spr'); if (!spr) return;
-  const sprite = cat.state === 'walk' ? 'walk' + (cat.frame + 1) : cat.state;
   spr.innerHTML = catSVG(sprite, CATS[S.cat], cat.dir < 0) + (cat.state === 'sleep' ? '<span class="zz">z</span>' : '');
 }
 function catTick() {
   if (S.view === 'public' || !$('#cat')) return;
   const now = Date.now();
+  cat.tick++;
+  if (!RM && now > cat.blinkUntil + 2000 && Math.random() < .02) cat.blinkUntil = now + 180;
   const busy = cat.pop || S.sheet || $('#guide-root').innerHTML;
   if (cat.userSleep) cat.state = 'sleep';
   else if (busy) { if (cat.state !== 'sit') cat.state = 'sit'; cat.until = now + 2000; }
   else if (now - lastAct > 45000) cat.state = 'sleep';
   else if (cat.state === 'sleep') { cat.state = 'sit'; cat.until = now + 1200; }
   else if (cat.state === 'sit' && now > cat.until && !RM) {
-    const w = appRect().width; cat.target = 12 + Math.random() * (w - 80); cat.dir = cat.target > cat.x ? 1 : -1; cat.state = 'walk';
+    const w = appRect().width; cat.target = 12 + Math.random() * (w - 96); cat.dir = cat.target > cat.x ? 1 : -1; cat.state = 'walk'; cat.frame = 0;
   } else if (cat.state === 'walk') {
-    cat.x += cat.dir * 4; cat.frame ^= 1;
+    cat.x += cat.dir * 4; cat.frame = (cat.frame + 1) % 6;
     if ((cat.dir > 0 && cat.x >= cat.target) || (cat.dir < 0 && cat.x <= cat.target)) { cat.state = 'sit'; cat.until = now + 3500 + Math.random() * 6000; }
   }
   placeCat(false);
@@ -1333,13 +1442,20 @@ function renderPop(html) {
 function positionPop() {
   const pop = $('#cat-pop'), el = $('#cat'); if (!pop || !el) return;
   const ar = appRect(), w = ar.width, cb = parseFloat(el.style.bottom) || 0;
-  let bottom = cb + 42;
+  let bottom = cb + 54;
   if (bottom + pop.offsetHeight > ar.height - 8) bottom = Math.max(8, cb - pop.offsetHeight - 6);
   pop.style.bottom = bottom + 'px';
-  pop.style.left = Math.max(8, Math.min(cat.x - 100, w - 258)) + 'px';
+  pop.style.left = Math.max(8, Math.min(cat.x - 93, w - 258)) + 'px';
 }
 function hideCatPop() { cat.pop = null; clearTimeout(popTimer); const r = $('#cat-pop-root'); if (r) r.innerHTML = ''; }
+function catMood(mood, ms) {
+  cat.mood = mood; cat.moodUntil = Date.now() + ms;
+  if (cat.state !== 'sit') { cat.state = 'sit'; cat.until = Date.now() + ms + 1500; }
+  placeCat(true);
+}
+function worry() { catMood('worried', 2500); }
 function celebrate() {
+  catMood('happy', 1600);
   const el = $('#cat'); if (!el || RM) return;
   el.classList.remove('jump'); void el.offsetWidth; el.classList.add('jump');
   setTimeout(() => el.classList.remove('jump'), 700);
@@ -1430,7 +1546,7 @@ const A = {
   noteSave() {
     const g = G(), cid = S.sheet.id; const body = [];
     g.note.fields.forEach(([l], i) => { const v = $('#nf-' + i).value.trim(); if (v) body.push([l, v]); });
-    if (!body.length) { toast('Escribe al menos un campo.'); return; }
+    if (!body.length) { toast('Escribe al menos un campo.'); worry(); return; }
     S.data.records[cid].unshift({ id: uid('r'), ago: 0, title: g.note.name, body, private: !!g.note.private, author: g.pro });
     S.openEntries = {}; closeSheet(); toast('Nota guardada'); celebrate();
   },
@@ -1449,7 +1565,7 @@ const A = {
   freeItem() { openSheet('free'); setTimeout(() => { const f = $('#free-name'); if (f) f.focus(); }, 50); },
   freeSave() {
     const name = $('#free-name').value.trim(), price = num($('#free-price').value);
-    if (!name || !price) { toast('Escribe qué es y cuánto cuesta.'); return; }
+    if (!name || !price) { toast('Escribe qué es y cuánto cuesta.'); worry(); return; }
     if (!S.cart) S.cart = { clientId: null, apptId: null, lines: [] };
     S.cart.lines.push({ key: uid('l'), itemId: null, name, price, qty: 1 }); closeSheet();
   },
